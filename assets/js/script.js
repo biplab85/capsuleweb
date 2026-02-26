@@ -64,15 +64,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (spbEl) {
       var spbSwiper = new Swiper(spbEl, {
         loop: true,
-        slidesPerView: 2,
-        spaceBetween: 22,
+        slidesPerView: 4,
+        spaceBetween: 16,
         speed: 3000,
         autoplay: {
           delay: 0,
           disableOnInteraction: false
         },
         breakpoints: {
-          480: { slidesPerView: 3, spaceBetween: 28 },
+          480: { slidesPerView: 4, spaceBetween: 20 },
           768: { slidesPerView: 4, spaceBetween: 36 },
           992: { slidesPerView: 5, spaceBetween: 48 },
           1280: { slidesPerView: 6, spaceBetween: 48 }
