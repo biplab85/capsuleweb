@@ -1,4 +1,4 @@
-# Capsule Digital — Landing Page Content
+# Capsule Digital — Landing Page Content -- Done
 
 > **SEO Meta Title:** Sydney's Full-Service Digital Marketing Agency | Capsule Digital
 > **Meta Description:** Capsule Digital is a Sydney-based digital marketing agency offering SEO, social media marketing, Google Ads, content creation & business growth consulting. Book a free consultation today.
@@ -6,7 +6,7 @@
 
 ---
 
-## Section 1: Hero
+## Section 1: Hero -- Done
 
 **Headline**
 # Sydney's Full-Service Digital Marketing Agency
@@ -24,7 +24,7 @@ Capsule Digital partners with Sydney businesses to build digital strategies that
 
 ---
 
-## Section 2: Social Proof Bar
+## Section 2: Social Proof Bar -- done
 
 **Small Heading**
 Tools & Platforms We Work With
@@ -65,7 +65,7 @@ Strategic guidance to help you scale smarter and faster.
 
 ---
 
-## Section 4: Why Capsule Digital
+## Section 4: Why Capsule Digital -- done
 
 **Section Heading**
 ### Why Businesses Choose Us
@@ -84,7 +84,7 @@ Not all agencies are built the same.
 
 ---
 
-## Section 5: How It Works
+## Section 5: How It Works -- done 
 
 **Section Heading**
 ### Getting Started Is Simple
@@ -126,7 +126,7 @@ We execute, optimise, and report back with clear results. You focus on your busi
 
 ---
 
-## Section 7: FAQ
+## Section 7: FAQ  -- done
 
 **Section Heading**
 ### Frequently Asked Questions
@@ -148,7 +148,7 @@ Absolutely. We've built our packages specifically to be accessible for small bus
 
 ---
 
-## Section 8: Final CTA
+## Section 8: Final CTA -- done
 
 **Section Heading**
 ### Ready to Grow Your Business?

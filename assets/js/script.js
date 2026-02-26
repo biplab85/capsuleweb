@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
     accordionLinks.forEach(function (link) {
       var body = link.querySelector('.accordion-body');
       if (body && link.classList.contains('w--current')) {
-        body.style.maxHeight = body.scrollHeight + 'px';
+        body.style.maxHeight = (body.scrollHeight + 20) + 'px';
       }
     });
 
@@ -218,16 +218,14 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         var clicked = this;
         var isActive = clicked.classList.contains('w--current');
-        var clickedRect = clicked.getBoundingClientRect();
-        var clickedTop = clickedRect.top;
 
-        // Close all in this container
+        // Close all open items in this container
         accordionLinks.forEach(function (l) {
           var body = l.querySelector('.accordion-body');
           if (body && l.classList.contains('w--current')) {
+            // Pin to current scrollHeight so transition has a start value
             body.style.maxHeight = body.scrollHeight + 'px';
-            // Force reflow then collapse
-            body.offsetHeight;
+            body.offsetHeight; // force reflow
             body.style.maxHeight = '0';
           }
           l.classList.remove('w--current');
@@ -238,26 +236,9 @@ document.addEventListener('DOMContentLoaded', function () {
           clicked.classList.add('w--current');
           var body = clicked.querySelector('.accordion-body');
           if (body) {
-            body.style.maxHeight = body.scrollHeight + 'px';
-            // After transition, allow flexible height for window resizes
-            var onEnd = function () {
-              if (clicked.classList.contains('w--current')) {
-                body.style.maxHeight = 'none';
-              }
-              body.removeEventListener('transitionend', onEnd);
-            };
-            body.addEventListener('transitionend', onEnd);
+            body.style.maxHeight = (body.scrollHeight + 20) + 'px';
           }
         }
-
-        // Keep clicked item visually stable — compensate scroll shift
-        requestAnimationFrame(function () {
-          var newTop = clicked.getBoundingClientRect().top;
-          var drift = newTop - clickedTop;
-          if (Math.abs(drift) > 2) {
-            window.scrollBy({ top: drift, behavior: 'smooth' });
-          }
-        });
       });
     });
   }

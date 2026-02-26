@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <title>Sydney's Full-Service Digital Marketing Agency | Capsule Digital</title>
-  <meta name="description" content="Capsule Digital is a Sydney-based digital marketing agency offering SEO, social media marketing, Google Ads, content creation &amp; business growth consulting. Book a free consultation today." />
-  <meta name="keywords" content="digital marketing agency Sydney, SEO services, social media marketing services, Google Ads agency, content creation agency, business growth consultant" />
+  <meta name="description"
+    content="Capsule Digital is a Sydney-based digital marketing agency offering SEO, social media marketing, Google Ads, content creation &amp; business growth consulting. Book a free consultation today." />
+  <meta name="keywords"
+    content="digital marketing agency Sydney, SEO services, social media marketing services, Google Ads agency, content creation agency, business growth consultant" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="assets/css/webflow.min.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -33,6 +35,11 @@
           <img loading="lazy" src="assets/img/logo-marketingflow.svg" alt="" class="site-logo" />
         </a>
         <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
+          <div class="drawer-logo-wrapper">
+            <a href="/" class="drawer-logo-link">
+              <img src="assets/img/logo-marketingflow.svg" alt="MarketingFlow" class="drawer-logo" />
+            </a>
+          </div>
           <div class="nav-menu">
             <a href="/#hero" class="nav-link-wrapper w-inline-block">
               <div class="nav-link">
@@ -104,6 +111,16 @@
                 <div class="_15px-circle"></div>
               </div>
             </a>
+          </div>
+          <div class="drawer-social-links">
+            <a href="https://facebook.com" target="_blank" class="drawer-social-icon">
+              <img loading="lazy" src="assets/img/facebook.png" alt="Facebook" /></a>
+            <a href="https://instagram.com" target="_blank" class="drawer-social-icon">
+              <img loading="lazy" src="assets/img/instagram.avif" alt="Instagram" /></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="drawer-social-icon">
+              <img loading="lazy" src="assets/img/linkedin.avif" alt="LinkedIn" /></a>
+            <a href="https://youtube.com" target="_blank" class="drawer-social-icon">
+              <img loading="lazy" src="assets/img/youtube.avif" alt="YouTube" /></a>
           </div>
           <div class="close-navbar-icon w-nav-button">
             <div class="close-icon-rotate-white">close</div>
@@ -730,7 +747,8 @@
               <div class="gradient-bg">SEO · Social Media · Ads · Content</div>
             </div>
             <h2 class="hero-sub-heading">Sydney's Full-Service Digital Marketing Agency</h2>
-            <p class="hero-supporting-text">Capsule Digital partners with Sydney businesses to build digital strategies that drive real, measurable growth. We handle it all so you can focus on running your business.</p>
+            <p class="hero-supporting-text">Capsule Digital partners with Sydney businesses to build digital strategies
+              that drive real, measurable growth. We handle it all so you can focus on running your business.</p>
             <div>
               <a href="#services" class="primary-button w-inline-block">
                 <div class="button-text-wrapper-26px">
@@ -755,6 +773,22 @@
                   <div class="_15px-circle"></div>
                 </div>
               </a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="hero-stat__number">50+</span>
+                <span class="hero-stat__label">Projects Delivered</span>
+              </div>
+              <div class="hero-stats__divider"></div>
+              <div class="hero-stat">
+                <span class="hero-stat__number">3</span>
+                <span class="hero-stat__label">Continents Served</span>
+              </div>
+              <div class="hero-stats__divider"></div>
+              <div class="hero-stat">
+                <span class="hero-stat__number">100%</span>
+                <span class="hero-stat__label">On-Time Delivery</span>
+              </div>
             </div>
           </div>
           <div class="hero-title-block">
@@ -844,7 +878,8 @@
     <!-- ========== ABOUT SECTION ========== -->
     <section id="about" class="section">
       <!-- Decorative SVG: floating orbs + arc lines -->
-      <svg class="about-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <svg class="about-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"
+        preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <defs>
           <filter id="about-glow" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur in="SourceGraphic" stdDeviation="4" />
@@ -861,15 +896,23 @@
           </linearGradient>
         </defs>
         <!-- Sweeping arcs -->
-        <path class="about-arc about-arc--1" d="M-100,200 Q500,50 960,180 T2020,100" fill="none" stroke="url(#about-arc-g1)" stroke-width="1" />
-        <path class="about-arc about-arc--2" d="M-100,500 Q600,350 1000,480 T2020,400" fill="none" stroke="url(#about-arc-g2)" stroke-width="1" />
-        <path class="about-arc about-arc--3" d="M-100,850 Q400,700 960,820 T2020,750" fill="none" stroke="url(#about-arc-g1)" stroke-width="1" />
+        <path class="about-arc about-arc--1" d="M-100,200 Q500,50 960,180 T2020,100" fill="none"
+          stroke="url(#about-arc-g1)" stroke-width="1" />
+        <path class="about-arc about-arc--2" d="M-100,500 Q600,350 1000,480 T2020,400" fill="none"
+          stroke="url(#about-arc-g2)" stroke-width="1" />
+        <path class="about-arc about-arc--3" d="M-100,850 Q400,700 960,820 T2020,750" fill="none"
+          stroke="url(#about-arc-g1)" stroke-width="1" />
         <!-- Floating orbs -->
-        <circle class="about-orb about-orb--1" cx="120" cy="150" r="3" fill="rgba(99,102,241,0.4)" filter="url(#about-glow)" />
-        <circle class="about-orb about-orb--2" cx="1800" cy="200" r="2.5" fill="rgba(251,146,60,0.35)" filter="url(#about-glow)" />
-        <circle class="about-orb about-orb--3" cx="400" cy="900" r="2" fill="rgba(45,212,191,0.3)" filter="url(#about-glow)" />
-        <circle class="about-orb about-orb--4" cx="1500" cy="850" r="3" fill="rgba(168,85,247,0.3)" filter="url(#about-glow)" />
-        <circle class="about-orb about-orb--5" cx="960" cy="100" r="2" fill="rgba(251,146,60,0.25)" filter="url(#about-glow)" />
+        <circle class="about-orb about-orb--1" cx="120" cy="150" r="3" fill="rgba(99,102,241,0.4)"
+          filter="url(#about-glow)" />
+        <circle class="about-orb about-orb--2" cx="1800" cy="200" r="2.5" fill="rgba(251,146,60,0.35)"
+          filter="url(#about-glow)" />
+        <circle class="about-orb about-orb--3" cx="400" cy="900" r="2" fill="rgba(45,212,191,0.3)"
+          filter="url(#about-glow)" />
+        <circle class="about-orb about-orb--4" cx="1500" cy="850" r="3" fill="rgba(168,85,247,0.3)"
+          filter="url(#about-glow)" />
+        <circle class="about-orb about-orb--5" cx="960" cy="100" r="2" fill="rgba(251,146,60,0.25)"
+          filter="url(#about-glow)" />
       </svg>
       <div class="container">
         <div class="grid-2-column-1-6">
@@ -897,13 +940,17 @@
                   <li class="list-item-14px about-card">
                     <div class="about-card__icon">
                       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="24" cy="24" r="20" stroke="#6366f1" stroke-width="2"/>
-                        <circle cx="24" cy="24" r="12" stroke="#6366f1" stroke-width="2"/>
-                        <circle cx="24" cy="24" r="4" stroke="#fb923c" stroke-width="2.5"/>
-                        <line x1="24" y1="2" x2="24" y2="10" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="24" y1="38" x2="24" y2="46" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="2" y1="24" x2="10" y2="24" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="38" y1="24" x2="46" y2="24" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle cx="24" cy="24" r="20" stroke="#6366f1" stroke-width="2" />
+                        <circle cx="24" cy="24" r="12" stroke="#6366f1" stroke-width="2" />
+                        <circle cx="24" cy="24" r="4" stroke="#fb923c" stroke-width="2.5" />
+                        <line x1="24" y1="2" x2="24" y2="10" stroke="#6366f1" stroke-width="1.5"
+                          stroke-linecap="round" />
+                        <line x1="24" y1="38" x2="24" y2="46" stroke="#6366f1" stroke-width="1.5"
+                          stroke-linecap="round" />
+                        <line x1="2" y1="24" x2="10" y2="24" stroke="#6366f1" stroke-width="1.5"
+                          stroke-linecap="round" />
+                        <line x1="38" y1="24" x2="46" y2="24" stroke="#6366f1" stroke-width="1.5"
+                          stroke-linecap="round" />
                       </svg>
                     </div>
                     <div class="about-card__content">
@@ -913,12 +960,15 @@
                   <li class="list-item-14px about-card">
                     <div class="about-card__icon">
                       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4" y="6" width="40" height="30" rx="3" stroke="#6366f1" stroke-width="2"/>
-                        <line x1="4" y1="12" x2="44" y2="12" stroke="#6366f1" stroke-width="1.5"/>
-                        <path d="M10 30 L16 22 L22 26 L30 16 L38 20" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="38" cy="20" r="2.5" stroke="#fb923c" stroke-width="1.5"/>
-                        <line x1="24" y1="36" x2="24" y2="42" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="16" y1="42" x2="32" y2="42" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+                        <rect x="4" y="6" width="40" height="30" rx="3" stroke="#6366f1" stroke-width="2" />
+                        <line x1="4" y1="12" x2="44" y2="12" stroke="#6366f1" stroke-width="1.5" />
+                        <path d="M10 30 L16 22 L22 26 L30 16 L38 20" stroke="#fb923c" stroke-width="2.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="38" cy="20" r="2.5" stroke="#fb923c" stroke-width="1.5" />
+                        <line x1="24" y1="36" x2="24" y2="42" stroke="#6366f1" stroke-width="2"
+                          stroke-linecap="round" />
+                        <line x1="16" y1="42" x2="32" y2="42" stroke="#6366f1" stroke-width="2"
+                          stroke-linecap="round" />
                       </svg>
                     </div>
                     <div class="about-card__content">
@@ -928,10 +978,13 @@
                   <li class="list-item-14px about-card">
                     <div class="about-card__icon">
                       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 38 C10 30, 18 18, 28 14 C34 12, 40 10, 42 8" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"/>
-                        <path d="M34 8 L42 8 L42 16" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="14" cy="14" r="6" stroke="#fb923c" stroke-width="2"/>
-                        <path d="M11.5 14 L13 15.5 L17 11.5" stroke="#fb923c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 38 C10 30, 18 18, 28 14 C34 12, 40 10, 42 8" stroke="#6366f1" stroke-width="2.5"
+                          stroke-linecap="round" />
+                        <path d="M34 8 L42 8 L42 16" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="14" cy="14" r="6" stroke="#fb923c" stroke-width="2" />
+                        <path d="M11.5 14 L13 15.5 L17 11.5" stroke="#fb923c" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
                       </svg>
                     </div>
                     <div class="about-card__content">
@@ -941,12 +994,15 @@
                   <li class="list-item-14px about-card">
                     <div class="about-card__icon">
                       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="18" cy="16" r="6" stroke="#6366f1" stroke-width="2"/>
-                        <path d="M6 38 C6 30, 12 26, 18 26 C24 26, 30 30, 30 38" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
-                        <circle cx="34" cy="16" r="5" stroke="#6366f1" stroke-width="1.5"/>
-                        <path d="M26 36 C26 30, 30 27, 34 27 C38 27, 42 30, 42 36" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"/>
-                        <circle cx="38" cy="8" r="7" stroke="#fb923c" stroke-width="2"/>
-                        <path d="M35 8 L37 10 L41 6" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="18" cy="16" r="6" stroke="#6366f1" stroke-width="2" />
+                        <path d="M6 38 C6 30, 12 26, 18 26 C24 26, 30 30, 30 38" stroke="#6366f1" stroke-width="2"
+                          stroke-linecap="round" />
+                        <circle cx="34" cy="16" r="5" stroke="#6366f1" stroke-width="1.5" />
+                        <path d="M26 36 C26 30, 30 27, 34 27 C38 27, 42 30, 42 36" stroke="#6366f1" stroke-width="1.5"
+                          stroke-linecap="round" />
+                        <circle cx="38" cy="8" r="7" stroke="#fb923c" stroke-width="2" />
+                        <path d="M35 8 L37 10 L41 6" stroke="#fb923c" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
                       </svg>
                     </div>
                     <div class="about-card__content">
@@ -979,88 +1035,114 @@
                   <!-- Background -->
                   <defs>
                     <linearGradient id="aboutSeoBg" x1="0" y1="0" x2="310" y2="465" gradientUnits="userSpaceOnUse">
-                      <stop offset="0%" stop-color="#0f1029"/>
-                      <stop offset="100%" stop-color="#0a0b1a"/>
+                      <stop offset="0%" stop-color="#0f1029" />
+                      <stop offset="100%" stop-color="#0a0b1a" />
                     </linearGradient>
-                    <linearGradient id="aboutSeoTrend" x1="40" y1="350" x2="270" y2="140" gradientUnits="userSpaceOnUse">
-                      <stop offset="0%" stop-color="#6366f1"/>
-                      <stop offset="100%" stop-color="#fb923c"/>
+                    <linearGradient id="aboutSeoTrend" x1="40" y1="350" x2="270" y2="140"
+                      gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#6366f1" />
+                      <stop offset="100%" stop-color="#fb923c" />
                     </linearGradient>
                     <filter id="seoGlow">
-                      <feGaussianBlur stdDeviation="4" result="blur"/>
-                      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                      <feGaussianBlur stdDeviation="4" result="blur" />
+                      <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
                     </filter>
                     <filter id="seoNodeGlow">
-                      <feGaussianBlur stdDeviation="3" result="blur"/>
-                      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                      <feGaussianBlur stdDeviation="3" result="blur" />
+                      <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
                     </filter>
                   </defs>
-                  <rect width="310" height="465" rx="16" fill="url(#aboutSeoBg)"/>
+                  <rect width="310" height="465" rx="16" fill="url(#aboutSeoBg)" />
                   <!-- Grid lines -->
                   <g opacity="0.04" stroke="#fff" stroke-width="0.5">
-                    <line x1="0" y1="93" x2="310" y2="93"/><line x1="0" y1="186" x2="310" y2="186"/>
-                    <line x1="0" y1="279" x2="310" y2="279"/><line x1="0" y1="372" x2="310" y2="372"/>
-                    <line x1="77" y1="0" x2="77" y2="465"/><line x1="155" y1="0" x2="155" y2="465"/>
-                    <line x1="233" y1="0" x2="233" y2="465"/>
+                    <line x1="0" y1="93" x2="310" y2="93" />
+                    <line x1="0" y1="186" x2="310" y2="186" />
+                    <line x1="0" y1="279" x2="310" y2="279" />
+                    <line x1="0" y1="372" x2="310" y2="372" />
+                    <line x1="77" y1="0" x2="77" y2="465" />
+                    <line x1="155" y1="0" x2="155" y2="465" />
+                    <line x1="233" y1="0" x2="233" y2="465" />
                   </g>
 
                   <!-- Magnifying glass -->
                   <g transform="translate(95, 120)">
                     <!-- Handle -->
-                    <line x1="85" y1="85" x2="115" y2="115" stroke="#4a4e7a" stroke-width="8" stroke-linecap="round"/>
+                    <line x1="85" y1="85" x2="115" y2="115" stroke="#4a4e7a" stroke-width="8" stroke-linecap="round" />
                     <!-- Outer ring -->
-                    <circle class="seo-ring" cx="55" cy="55" r="50" stroke="#6366f1" stroke-width="3.5" style="--ring-len:314"/>
+                    <circle class="seo-ring" cx="55" cy="55" r="50" stroke="#6366f1" stroke-width="3.5"
+                      style="--ring-len:314" />
                     <!-- Inner fill -->
-                    <circle cx="55" cy="55" r="46" fill="rgba(99,102,241,0.06)"/>
+                    <circle cx="55" cy="55" r="46" fill="rgba(99,102,241,0.06)" />
                     <!-- Bar chart inside lens -->
                     <g class="seo-bars">
-                      <rect class="seo-bar" x="22" y="58" width="12" height="26" rx="2" fill="#6366f1" opacity="0.7"/>
-                      <rect class="seo-bar" x="38" y="44" width="12" height="40" rx="2" fill="#6366f1" opacity="0.8"/>
-                      <rect class="seo-bar" x="54" y="36" width="12" height="48" rx="2" fill="#818cf8" opacity="0.85"/>
-                      <rect class="seo-bar" x="70" y="24" width="12" height="60" rx="2" fill="#fb923c" opacity="0.9"/>
+                      <rect class="seo-bar" x="22" y="58" width="12" height="26" rx="2" fill="#6366f1" opacity="0.7" />
+                      <rect class="seo-bar" x="38" y="44" width="12" height="40" rx="2" fill="#6366f1" opacity="0.8" />
+                      <rect class="seo-bar" x="54" y="36" width="12" height="48" rx="2" fill="#818cf8" opacity="0.85" />
+                      <rect class="seo-bar" x="70" y="24" width="12" height="60" rx="2" fill="#fb923c" opacity="0.9" />
                     </g>
                   </g>
 
                   <!-- Trend line -->
-                  <path class="seo-trend-glow" d="M40 370 Q80 340, 110 310 Q140 280, 165 260 Q200 230, 230 195 Q250 170, 270 145" stroke="url(#aboutSeoTrend)" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.2" filter="url(#seoGlow)" style="--line-len:380"/>
-                  <path class="seo-trend-line" d="M40 370 Q80 340, 110 310 Q140 280, 165 260 Q200 230, 230 195 Q250 170, 270 145" stroke="url(#aboutSeoTrend)" stroke-width="2.5" stroke-linecap="round" fill="none" style="--line-len:380"/>
+                  <path class="seo-trend-glow"
+                    d="M40 370 Q80 340, 110 310 Q140 280, 165 260 Q200 230, 230 195 Q250 170, 270 145"
+                    stroke="url(#aboutSeoTrend)" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.2"
+                    filter="url(#seoGlow)" style="--line-len:380" />
+                  <path class="seo-trend-line"
+                    d="M40 370 Q80 340, 110 310 Q140 280, 165 260 Q200 230, 230 195 Q250 170, 270 145"
+                    stroke="url(#aboutSeoTrend)" stroke-width="2.5" stroke-linecap="round" fill="none"
+                    style="--line-len:380" />
 
                   <!-- Data nodes on trend line -->
                   <g class="seo-nodes">
-                    <circle class="seo-node" cx="110" cy="310" r="5" fill="#6366f1" stroke="#fff" stroke-width="1.5"/>
-                    <circle class="seo-node" cx="165" cy="260" r="5" fill="#818cf8" stroke="#fff" stroke-width="1.5"/>
-                    <circle class="seo-node" cx="230" cy="195" r="5" fill="#a78bfa" stroke="#fff" stroke-width="1.5"/>
-                    <circle class="seo-node seo-node-glow" cx="270" cy="145" r="6" fill="#fb923c" stroke="#fff" stroke-width="2" filter="url(#seoNodeGlow)"/>
+                    <circle class="seo-node" cx="110" cy="310" r="5" fill="#6366f1" stroke="#fff" stroke-width="1.5" />
+                    <circle class="seo-node" cx="165" cy="260" r="5" fill="#818cf8" stroke="#fff" stroke-width="1.5" />
+                    <circle class="seo-node" cx="230" cy="195" r="5" fill="#a78bfa" stroke="#fff" stroke-width="1.5" />
+                    <circle class="seo-node seo-node-glow" cx="270" cy="145" r="6" fill="#fb923c" stroke="#fff"
+                      stroke-width="2" filter="url(#seoNodeGlow)" />
                   </g>
 
                   <!-- Keyword tags -->
                   <g class="seo-tags">
                     <g class="seo-tag" transform="translate(20, 40)">
-                      <rect width="58" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
-                      <text x="29" y="16" text-anchor="middle" fill="#818cf8" font-size="10" font-family="Barlow, sans-serif" font-weight="600">#SEO</text>
+                      <rect width="58" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)"
+                        stroke-width="1" />
+                      <text x="29" y="16" text-anchor="middle" fill="#818cf8" font-size="10"
+                        font-family="Barlow, sans-serif" font-weight="600">#SEO</text>
                     </g>
                     <g class="seo-tag" transform="translate(210, 60)">
-                      <rect width="72" height="24" rx="12" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.3)" stroke-width="1"/>
-                      <text x="36" y="16" text-anchor="middle" fill="#fb923c" font-size="10" font-family="Barlow, sans-serif" font-weight="600">#Growth</text>
+                      <rect width="72" height="24" rx="12" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.3)"
+                        stroke-width="1" />
+                      <text x="36" y="16" text-anchor="middle" fill="#fb923c" font-size="10"
+                        font-family="Barlow, sans-serif" font-weight="600">#Growth</text>
                     </g>
                     <g class="seo-tag" transform="translate(30, 420)">
-                      <rect width="82" height="24" rx="12" fill="rgba(129,140,248,0.12)" stroke="rgba(129,140,248,0.3)" stroke-width="1"/>
-                      <text x="41" y="16" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="Barlow, sans-serif" font-weight="600">#Analytics</text>
+                      <rect width="82" height="24" rx="12" fill="rgba(129,140,248,0.12)" stroke="rgba(129,140,248,0.3)"
+                        stroke-width="1" />
+                      <text x="41" y="16" text-anchor="middle" fill="#a78bfa" font-size="10"
+                        font-family="Barlow, sans-serif" font-weight="600">#Analytics</text>
                     </g>
                   </g>
 
                   <!-- Floating particles -->
                   <g class="seo-particles">
-                    <circle class="seo-particle" cx="45" cy="250" r="3" fill="#6366f1" opacity="0.5"/>
-                    <circle class="seo-particle" cx="265" cy="100" r="2.5" fill="#fb923c" opacity="0.5"/>
-                    <circle class="seo-particle" cx="280" cy="380" r="2" fill="#818cf8" opacity="0.5"/>
-                    <circle class="seo-particle" cx="50" cy="390" r="3" fill="#a78bfa" opacity="0.5"/>
+                    <circle class="seo-particle" cx="45" cy="250" r="3" fill="#6366f1" opacity="0.5" />
+                    <circle class="seo-particle" cx="265" cy="100" r="2.5" fill="#fb923c" opacity="0.5" />
+                    <circle class="seo-particle" cx="280" cy="380" r="2" fill="#818cf8" opacity="0.5" />
+                    <circle class="seo-particle" cx="50" cy="390" r="3" fill="#a78bfa" opacity="0.5" />
                   </g>
 
                   <!-- Arrow indicator (top-right) -->
                   <g class="seo-arrow-group" transform="translate(240, 30)">
-                    <circle cx="20" cy="20" r="18" fill="rgba(251,146,60,0.1)" stroke="rgba(251,146,60,0.3)" stroke-width="1.5"/>
-                    <path d="M20 28 L20 12 M14 18 L20 12 L26 18" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="20" cy="20" r="18" fill="rgba(251,146,60,0.1)" stroke="rgba(251,146,60,0.3)"
+                      stroke-width="1.5" />
+                    <path d="M20 28 L20 12 M14 18 L20 12 L26 18" stroke="#fb923c" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
                   </g>
                 </svg>
               </div>
@@ -1097,11 +1179,6 @@
                   <div class="testimonial-divider"></div>
                   <p class="_14px-text-600">Digital Marketing</p>
                 </div>
-                <!-- <div class="service-thumbnail-wrapper"><img loading="lazy"
-                    src="assets/img/service-seo.avif"
-                    alt="" class="service-thumbnail" />
-                  <div class="service-overlay"></div>
-                </div> -->
               </div>
             </a>
             <a data-w-tab="Tab 2" class="tab-link-no-css w-inline-block w-tab-link">
@@ -1113,10 +1190,6 @@
                 <div class="client-info">
                   <div class="testimonial-divider"></div>
                   <p class="_14px-text-600">Social Media</p>
-                </div>
-                <div class="service-thumbnail-wrapper"><img loading="lazy" src="assets/img/service-social.avif" alt=""
-                    class="service-thumbnail" />
-                  <div class="service-overlay"></div>
                 </div>
               </div>
             </a>
@@ -1130,10 +1203,6 @@
                   <div class="testimonial-divider"></div>
                   <p class="_14px-text-600">Lead Generation</p>
                 </div>
-                <div class="service-thumbnail-wrapper"><img loading="lazy" src="assets/img/service-paid.avif" alt=""
-                    class="service-thumbnail" />
-                  <div class="service-overlay"></div>
-                </div>
               </div>
             </a>
             <a data-w-tab="Tab 4" class="tab-link-no-css w-inline-block w-tab-link">
@@ -1145,10 +1214,6 @@
                 <div class="client-info">
                   <div class="testimonial-divider"></div>
                   <p class="_14px-text-600">Creative</p>
-                </div>
-                <div class="service-thumbnail-wrapper"><img loading="lazy" src="assets/img/service-branding.avif" alt=""
-                    class="service-thumbnail" />
-                  <div class="service-overlay"></div>
                 </div>
               </div>
             </a>
@@ -1162,10 +1227,6 @@
                   <div class="testimonial-divider"></div>
                   <p class="_14px-text-600">Email Marketing</p>
                 </div>
-                <div class="service-thumbnail-wrapper"><img loading="lazy" src="assets/img/service-lead.avif" alt=""
-                    class="service-thumbnail" />
-                  <div class="service-overlay"></div>
-                </div>
               </div>
             </a>
             <a data-w-tab="Tab 6" class="tab-link-no-css w-inline-block w-tab-link">
@@ -1178,20 +1239,8 @@
                   <div class="testimonial-divider"></div>
                   <p class="_14px-text-600">Data &amp; Insights</p>
                 </div>
-                <div class="service-thumbnail-wrapper"><img loading="lazy" src="assets/img/service-analytics.avif"
-                    alt="" class="service-thumbnail" />
-                  <div class="service-overlay"></div>
-                </div>
               </div>
             </a>
-          </div>
-          <div class="hidden w-tab-content">
-            <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active"></div>
-            <div data-w-tab="Tab 2" class="w-tab-pane"></div>
-            <div data-w-tab="Tab 3" class="w-tab-pane"></div>
-            <div data-w-tab="Tab 4" class="w-tab-pane"></div>
-            <div data-w-tab="Tab 5" class="w-tab-pane"></div>
-            <div data-w-tab="Tab 6" class="w-tab-pane"></div>
           </div>
         </div>
       </div>
@@ -1406,36 +1455,52 @@
       <div class="infinity-carousel-container primary">
         <div data-w-id="6a38a641-5cca-1029-8d13-02aa314c26d3" class="infinity-slider-carousel">
           <div class="infinity-item-container">
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-bronx.svg" class="partner-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-nexoy.webp" class="partner-logo" />
-            <img width="70" loading="lazy" alt="" src="assets/img/logo-wand.svg" class="partner-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-ronda.svg" class="partner-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-tate.svg" class="partner-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/Agile-Sourcing.png"
+              class="partner-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/aifarming.png" class="partner-logo" />
+            <img width="70" loading="lazy" alt="" src="assets/img/company-logo/Snazzy-Floret.png" class="partner-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/Get-Takaful.png"
+              class="partner-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/horizon-logo.svg"
+              class="partner-logo" />
           </div>
           <div class="infinity-item-container">
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-bronx.svg" class="partner-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-nexoy.webp" class="partner-logo" />
-            <img width="70" loading="lazy" alt="" src="assets/img/logo-wand.svg" class="partner-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-ronda.svg" class="partner-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-tate.svg" class="partner-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/Agile-Sourcing.png"
+              class="partner-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/aifarming.png" class="partner-logo" />
+            <img width="70" loading="lazy" alt="" src="assets/img/company-logo/Snazzy-Floret.png" class="partner-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/Get-Takaful.png"
+              class="partner-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/horizon-logo.svg"
+              class="partner-logo" />
           </div>
         </div>
       </div>
       <div class="infinity-carousel-container">
         <div data-w-id="6a38a641-5cca-1029-8d13-02aa314c26e1" class="infinity-slider-carousel">
           <div class="infinity-item-container">
-            <img width="70" loading="lazy" alt="" src="assets/img/logo-customers7.svg" class="sponser-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-customers6.svg" class="sponser-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-customers2.svg" class="sponser-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-customers5.svg" class="sponser-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-bronx2.svg" class="sponser-logo" />
+            <img width="70" loading="lazy" alt="" src="assets/img/company-logo/MedXpertsHub.png"
+              class="sponser-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/navigotech.png"
+              class="sponser-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/Popup-Together.png"
+              class="sponser-logo" />
+            <!-- <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/roboreg.png"
+              class="sponser-logo" /> -->
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/sklentr.png"
+              class="sponser-logo" />
           </div>
           <div class="infinity-item-container">
-            <img width="70" loading="lazy" alt="" src="assets/img/logo-customers7.svg" class="sponser-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-customers6.svg" class="sponser-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-customers2.svg" class="sponser-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-customers5.svg" class="sponser-logo" />
-            <img width="59.5" loading="lazy" alt="" src="assets/img/logo-bronx2.svg" class="sponser-logo" />
+            <img width="70" loading="lazy" alt="" src="assets/img/company-logo/MedXpertsHub.png"
+              class="sponser-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/navigotech.png"
+              class="sponser-logo" />
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/Popup-Together.png"
+              class="sponser-logo" />
+            <!-- <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/roboreg.png"
+              class="sponser-logo" /> -->
+            <img width="59.5" loading="lazy" alt="" src="assets/img/company-logo/sklentr.png"
+              class="sponser-logo" />
           </div>
         </div>
       </div>
@@ -1444,7 +1509,8 @@
     <!-- ========== WHY CHOOSE US SECTION ========== -->
     <section id="why-choose-us" class="wcu-section">
       <!-- SVG Background: Aurora Ribbons + Particle Field -->
-      <svg class="wcu-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <svg class="wcu-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"
+        preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <defs>
           <filter id="wcu-glow" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
@@ -1469,25 +1535,42 @@
           </linearGradient>
         </defs>
         <!-- Aurora ribbons -->
-        <path class="wcu-hex wcu-hex--1" d="M-200,300 C300,200 600,450 960,350 S1500,200 2120,380" fill="none" stroke="url(#wcu-aurora1)" stroke-width="120" opacity="0.7" />
-        <path class="wcu-hex wcu-hex--2" d="M-100,600 C400,500 700,750 1100,650 S1600,500 2100,700" fill="none" stroke="url(#wcu-aurora2)" stroke-width="100" opacity="0.5" />
-        <path class="wcu-hex wcu-hex--3" d="M-200,850 C200,750 500,900 960,800 S1400,700 2120,900" fill="none" stroke="url(#wcu-aurora3)" stroke-width="80" opacity="0.6" />
+        <path class="wcu-hex wcu-hex--1" d="M-200,300 C300,200 600,450 960,350 S1500,200 2120,380" fill="none"
+          stroke="url(#wcu-aurora1)" stroke-width="120" opacity="0.7" />
+        <path class="wcu-hex wcu-hex--2" d="M-100,600 C400,500 700,750 1100,650 S1600,500 2100,700" fill="none"
+          stroke="url(#wcu-aurora2)" stroke-width="100" opacity="0.5" />
+        <path class="wcu-hex wcu-hex--3" d="M-200,850 C200,750 500,900 960,800 S1400,700 2120,900" fill="none"
+          stroke="url(#wcu-aurora3)" stroke-width="80" opacity="0.6" />
         <!-- Floating particle dots -->
-        <circle class="wcu-node wcu-node--1" cx="150" cy="180" r="2" fill="rgba(99,102,241,0.5)" filter="url(#wcu-glow)" />
-        <circle class="wcu-node wcu-node--2" cx="480" cy="120" r="1.5" fill="rgba(251,146,60,0.4)" filter="url(#wcu-glow)" />
-        <circle class="wcu-node wcu-node--3" cx="820" cy="200" r="2.5" fill="rgba(168,85,247,0.4)" filter="url(#wcu-glow)" />
-        <circle class="wcu-node wcu-node--4" cx="1200" cy="100" r="2" fill="rgba(45,212,191,0.45)" filter="url(#wcu-glow)" />
-        <circle class="wcu-node wcu-node--5" cx="1550" cy="220" r="1.8" fill="rgba(99,102,241,0.35)" filter="url(#wcu-glow)" />
-        <circle class="wcu-node wcu-node--6" cx="350" cy="900" r="2" fill="rgba(236,72,153,0.3)" filter="url(#wcu-glow)" />
-        <circle class="wcu-node wcu-node--7" cx="1000" cy="950" r="2.2" fill="rgba(251,146,60,0.3)" filter="url(#wcu-glow)" />
-        <circle class="wcu-node wcu-node--8" cx="1650" cy="880" r="1.5" fill="rgba(45,212,191,0.35)" filter="url(#wcu-glow)" />
+        <circle class="wcu-node wcu-node--1" cx="150" cy="180" r="2" fill="rgba(99,102,241,0.5)"
+          filter="url(#wcu-glow)" />
+        <circle class="wcu-node wcu-node--2" cx="480" cy="120" r="1.5" fill="rgba(251,146,60,0.4)"
+          filter="url(#wcu-glow)" />
+        <circle class="wcu-node wcu-node--3" cx="820" cy="200" r="2.5" fill="rgba(168,85,247,0.4)"
+          filter="url(#wcu-glow)" />
+        <circle class="wcu-node wcu-node--4" cx="1200" cy="100" r="2" fill="rgba(45,212,191,0.45)"
+          filter="url(#wcu-glow)" />
+        <circle class="wcu-node wcu-node--5" cx="1550" cy="220" r="1.8" fill="rgba(99,102,241,0.35)"
+          filter="url(#wcu-glow)" />
+        <circle class="wcu-node wcu-node--6" cx="350" cy="900" r="2" fill="rgba(236,72,153,0.3)"
+          filter="url(#wcu-glow)" />
+        <circle class="wcu-node wcu-node--7" cx="1000" cy="950" r="2.2" fill="rgba(251,146,60,0.3)"
+          filter="url(#wcu-glow)" />
+        <circle class="wcu-node wcu-node--8" cx="1650" cy="880" r="1.5" fill="rgba(45,212,191,0.35)"
+          filter="url(#wcu-glow)" />
         <!-- Subtle connecting lines -->
-        <line class="wcu-line wcu-line--1" x1="150" y1="180" x2="480" y2="120" stroke="rgba(99,102,241,0.04)" stroke-width="1" />
-        <line class="wcu-line wcu-line--2" x1="480" y1="120" x2="820" y2="200" stroke="rgba(168,85,247,0.04)" stroke-width="1" />
-        <line class="wcu-line wcu-line--3" x1="820" y1="200" x2="1200" y2="100" stroke="rgba(45,212,191,0.03)" stroke-width="1" />
-        <line class="wcu-line wcu-line--4" x1="1200" y1="100" x2="1550" y2="220" stroke="rgba(99,102,241,0.03)" stroke-width="1" />
-        <line class="wcu-line wcu-line--5" x1="350" y1="900" x2="1000" y2="950" stroke="rgba(251,146,60,0.03)" stroke-width="1" />
-        <line class="wcu-line wcu-line--6" x1="1000" y1="950" x2="1650" y2="880" stroke="rgba(45,212,191,0.03)" stroke-width="1" />
+        <line class="wcu-line wcu-line--1" x1="150" y1="180" x2="480" y2="120" stroke="rgba(99,102,241,0.04)"
+          stroke-width="1" />
+        <line class="wcu-line wcu-line--2" x1="480" y1="120" x2="820" y2="200" stroke="rgba(168,85,247,0.04)"
+          stroke-width="1" />
+        <line class="wcu-line wcu-line--3" x1="820" y1="200" x2="1200" y2="100" stroke="rgba(45,212,191,0.03)"
+          stroke-width="1" />
+        <line class="wcu-line wcu-line--4" x1="1200" y1="100" x2="1550" y2="220" stroke="rgba(99,102,241,0.03)"
+          stroke-width="1" />
+        <line class="wcu-line wcu-line--5" x1="350" y1="900" x2="1000" y2="950" stroke="rgba(251,146,60,0.03)"
+          stroke-width="1" />
+        <line class="wcu-line wcu-line--6" x1="1000" y1="950" x2="1650" y2="880" stroke="rgba(45,212,191,0.03)"
+          stroke-width="1" />
       </svg>
       <div class="container">
         <div class="title-bar" data-w-id="wcu-title-bar"
@@ -1511,15 +1594,21 @@
             <div class="wcu-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Chess knight piece — custom strategy -->
-                <path d="M14 42h20M16 42v-4a2 2 0 012-2h12a2 2 0 012 2v4" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
-                <path d="M18 36c0-6 2-10 2-14s-4-8-4-12c0-2 2-4 4-4h2c2 0 4 1 6 3l4 4c1 1 2 3 2 5 0 3-2 5-4 5h-4c0 4 2 8 2 14" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="20" cy="14" r="1.5" fill="rgba(251,146,60,0.8)"/>
-                <path d="M38 8l-4 4M38 12l-4-4" stroke="rgba(251,146,60,0.5)" stroke-width="1.5" stroke-linecap="round"/>
-                <circle cx="38" cy="8" r="1" fill="rgba(45,212,191,0.6)"/>
+                <path d="M14 42h20M16 42v-4a2 2 0 012-2h12a2 2 0 012 2v4" fill="rgba(99,102,241,0.1)"
+                  stroke="rgba(99,102,241,0.6)" stroke-width="1.5" stroke-linejoin="round" />
+                <path
+                  d="M18 36c0-6 2-10 2-14s-4-8-4-12c0-2 2-4 4-4h2c2 0 4 1 6 3l4 4c1 1 2 3 2 5 0 3-2 5-4 5h-4c0 4 2 8 2 14"
+                  fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="20" cy="14" r="1.5" fill="rgba(251,146,60,0.8)" />
+                <path d="M38 8l-4 4M38 12l-4-4" stroke="rgba(251,146,60,0.5)" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <circle cx="38" cy="8" r="1" fill="rgba(45,212,191,0.6)" />
               </svg>
             </div>
             <h3 class="wcu-card__title">Strategy</h3>
-            <p class="wcu-card__desc">Cookie-cutter templates recycled across clients. Custom strategies built around your business goals</p>
+            <p class="wcu-card__desc">Cookie-cutter templates recycled across clients. Custom strategies built around
+              your business goals</p>
           </div>
           <!-- Card 2: Account Support -->
           <div class="wcu-card">
@@ -1527,21 +1616,30 @@
             <div class="wcu-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Person with headset — dedicated account manager -->
-                <circle cx="24" cy="16" r="8" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5"/>
-                <path d="M10 42c0-7.732 6.268-14 14-14s14 6.268 14 42" stroke="rgba(99,102,241,0.6)" stroke-width="1.5" stroke-linecap="round" fill="rgba(99,102,241,0.06)"/>
+                <circle cx="24" cy="16" r="8" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.6)"
+                  stroke-width="1.5" />
+                <path d="M10 42c0-7.732 6.268-14 14-14s14 6.268 14 42" stroke="rgba(99,102,241,0.6)" stroke-width="1.5"
+                  stroke-linecap="round" fill="rgba(99,102,241,0.06)" />
                 <!-- Headset -->
-                <path d="M14 16c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="rgba(45,212,191,0.5)" stroke-width="1.5" stroke-linecap="round"/>
-                <rect x="10" y="14" width="4" height="8" rx="2" fill="rgba(45,212,191,0.15)" stroke="rgba(45,212,191,0.5)" stroke-width="1.2"/>
-                <rect x="34" y="14" width="4" height="8" rx="2" fill="rgba(45,212,191,0.15)" stroke="rgba(45,212,191,0.5)" stroke-width="1.2"/>
+                <path d="M14 16c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="rgba(45,212,191,0.5)" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <rect x="10" y="14" width="4" height="8" rx="2" fill="rgba(45,212,191,0.15)"
+                  stroke="rgba(45,212,191,0.5)" stroke-width="1.2" />
+                <rect x="34" y="14" width="4" height="8" rx="2" fill="rgba(45,212,191,0.15)"
+                  stroke="rgba(45,212,191,0.5)" stroke-width="1.2" />
                 <!-- Chat bubble -->
-                <rect x="32" y="30" width="12" height="9" rx="3" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.5)" stroke-width="1.2"/>
-                <path d="M35 39l2 3 1-3" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.5)" stroke-width="1"/>
-                <line x1="35" y1="33.5" x2="41" y2="33.5" stroke="rgba(251,146,60,0.4)" stroke-width="1" stroke-linecap="round"/>
-                <line x1="35" y1="36" x2="39" y2="36" stroke="rgba(251,146,60,0.3)" stroke-width="1" stroke-linecap="round"/>
+                <rect x="32" y="30" width="12" height="9" rx="3" fill="rgba(251,146,60,0.12)"
+                  stroke="rgba(251,146,60,0.5)" stroke-width="1.2" />
+                <path d="M35 39l2 3 1-3" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.5)" stroke-width="1" />
+                <line x1="35" y1="33.5" x2="41" y2="33.5" stroke="rgba(251,146,60,0.4)" stroke-width="1"
+                  stroke-linecap="round" />
+                <line x1="35" y1="36" x2="39" y2="36" stroke="rgba(251,146,60,0.3)" stroke-width="1"
+                  stroke-linecap="round" />
               </svg>
             </div>
             <h3 class="wcu-card__title">Account Support</h3>
-            <p class="wcu-card__desc">Passed between juniors, hard to reach. Dedicated account manager who knows your business</p>
+            <p class="wcu-card__desc">Passed between juniors, hard to reach. Dedicated account manager who knows your
+              business</p>
           </div>
           <!-- Card 3: Location -->
           <div class="wcu-card">
@@ -1549,17 +1647,21 @@
             <div class="wcu-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Map pin — Sydney-based local team -->
-                <path d="M24 44s-14-12.5-14-22C10 14.268 16.268 8 24 8s14 6.268 14 14c0 9.5-14 22-14 22z" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
-                <circle cx="24" cy="22" r="6" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5"/>
-                <circle cx="24" cy="22" r="2.5" fill="rgba(251,146,60,0.7)"/>
+                <path d="M24 44s-14-12.5-14-22C10 14.268 16.268 8 24 8s14 6.268 14 14c0 9.5-14 22-14 22z"
+                  fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5"
+                  stroke-linejoin="round" />
+                <circle cx="24" cy="22" r="6" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.6)"
+                  stroke-width="1.5" />
+                <circle cx="24" cy="22" r="2.5" fill="rgba(251,146,60,0.7)" />
                 <!-- Handshake/meeting accent -->
-                <path d="M6 14h6M36 14h6" stroke="rgba(45,212,191,0.4)" stroke-width="1.5" stroke-linecap="round"/>
-                <circle cx="6" cy="14" r="1.5" fill="rgba(45,212,191,0.5)"/>
-                <circle cx="42" cy="14" r="1.5" fill="rgba(45,212,191,0.5)"/>
+                <path d="M6 14h6M36 14h6" stroke="rgba(45,212,191,0.4)" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="6" cy="14" r="1.5" fill="rgba(45,212,191,0.5)" />
+                <circle cx="42" cy="14" r="1.5" fill="rgba(45,212,191,0.5)" />
               </svg>
             </div>
             <h3 class="wcu-card__title">Location</h3>
-            <p class="wcu-card__desc">Offshore or interstate, never available. Sydney-based team, available for face-to-face meetings</p>
+            <p class="wcu-card__desc">Offshore or interstate, never available. Sydney-based team, available for
+              face-to-face meetings</p>
           </div>
           <!-- Card 4: Pricing -->
           <div class="wcu-card">
@@ -1567,16 +1669,22 @@
             <div class="wcu-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Price tag — affordable packages -->
-                <path d="M6 8h16l18 18-12 12-18-18V8z" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
-                <circle cx="16" cy="18" r="3" fill="rgba(251,146,60,0.15)" stroke="rgba(251,146,60,0.6)" stroke-width="1.5"/>
+                <path d="M6 8h16l18 18-12 12-18-18V8z" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.6)"
+                  stroke-width="1.5" stroke-linejoin="round" />
+                <circle cx="16" cy="18" r="3" fill="rgba(251,146,60,0.15)" stroke="rgba(251,146,60,0.6)"
+                  stroke-width="1.5" />
                 <!-- Dollar sign -->
-                <path d="M28 28v-2c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2.5 3 2.5 3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5" stroke="rgba(45,212,191,0.6)" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="25" y1="24" x2="25" y2="22" stroke="rgba(45,212,191,0.5)" stroke-width="1.2" stroke-linecap="round"/>
-                <line x1="25" y1="38" x2="25" y2="36" stroke="rgba(45,212,191,0.5)" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M28 28v-2c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2.5 3 2.5 3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5"
+                  stroke="rgba(45,212,191,0.6)" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="25" y1="24" x2="25" y2="22" stroke="rgba(45,212,191,0.5)" stroke-width="1.2"
+                  stroke-linecap="round" />
+                <line x1="25" y1="38" x2="25" y2="36" stroke="rgba(45,212,191,0.5)" stroke-width="1.2"
+                  stroke-linecap="round" />
               </svg>
             </div>
             <h3 class="wcu-card__title">Pricing</h3>
-            <p class="wcu-card__desc">Inflated retainers, hidden fees. Affordable packages designed for businesses of all sizes</p>
+            <p class="wcu-card__desc">Inflated retainers, hidden fees. Affordable packages designed for businesses of
+              all sizes</p>
           </div>
           <!-- Card 5: Contracts -->
           <div class="wcu-card">
@@ -1584,21 +1692,29 @@
             <div class="wcu-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Unlocked padlock — no lock-in contracts -->
-                <rect x="12" y="22" width="24" height="18" rx="3" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5"/>
-                <path d="M18 22v-6a6 6 0 0112 0" stroke="rgba(45,212,191,0.6)" stroke-width="2" stroke-linecap="round"/>
+                <rect x="12" y="22" width="24" height="18" rx="3" fill="rgba(99,102,241,0.1)"
+                  stroke="rgba(99,102,241,0.6)" stroke-width="1.5" />
+                <path d="M18 22v-6a6 6 0 0112 0" stroke="rgba(45,212,191,0.6)" stroke-width="2"
+                  stroke-linecap="round" />
                 <!-- Unlocked shackle — open to the right -->
-                <path d="M30 16v-2" stroke="rgba(45,212,191,0.4)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M30 16v-2" stroke="rgba(45,212,191,0.4)" stroke-width="2" stroke-linecap="round" />
                 <!-- Checkmark inside lock body -->
-                <path d="M20 31l3 3 5-6" stroke="rgba(251,146,60,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 31l3 3 5-6" stroke="rgba(251,146,60,0.7)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
                 <!-- Calendar accent -->
-                <rect x="34" y="6" width="10" height="10" rx="2" fill="rgba(251,146,60,0.1)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
-                <line x1="36" y1="6" x2="36" y2="4" stroke="rgba(251,146,60,0.4)" stroke-width="1" stroke-linecap="round"/>
-                <line x1="42" y1="6" x2="42" y2="4" stroke="rgba(251,146,60,0.4)" stroke-width="1" stroke-linecap="round"/>
-                <path d="M36 12l2 2 3-3" stroke="rgba(251,146,60,0.5)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="34" y="6" width="10" height="10" rx="2" fill="rgba(251,146,60,0.1)"
+                  stroke="rgba(251,146,60,0.4)" stroke-width="1" />
+                <line x1="36" y1="6" x2="36" y2="4" stroke="rgba(251,146,60,0.4)" stroke-width="1"
+                  stroke-linecap="round" />
+                <line x1="42" y1="6" x2="42" y2="4" stroke="rgba(251,146,60,0.4)" stroke-width="1"
+                  stroke-linecap="round" />
+                <path d="M36 12l2 2 3-3" stroke="rgba(251,146,60,0.5)" stroke-width="1" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </div>
             <h3 class="wcu-card__title">Contracts</h3>
-            <p class="wcu-card__desc">Locked in for 6–12 months. No lock-in contracts — we earn your business monthly</p>
+            <p class="wcu-card__desc">Locked in for 6–12 months. No lock-in contracts — we earn your business monthly
+            </p>
           </div>
           <!-- Card 6: Reporting -->
           <div class="wcu-card">
@@ -1606,20 +1722,28 @@
             <div class="wcu-card__icon">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Dashboard/chart — clear honest reports -->
-                <rect x="4" y="6" width="32" height="28" rx="3" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.6)" stroke-width="1.5"/>
-                <line x1="4" y1="13" x2="36" y2="13" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
+                <rect x="4" y="6" width="32" height="28" rx="3" fill="rgba(99,102,241,0.08)"
+                  stroke="rgba(99,102,241,0.6)" stroke-width="1.5" />
+                <line x1="4" y1="13" x2="36" y2="13" stroke="rgba(99,102,241,0.4)" stroke-width="1" />
                 <!-- Bar chart inside -->
-                <rect x="10" y="24" width="5" height="6" rx="1" fill="rgba(99,102,241,0.25)" stroke="rgba(99,102,241,0.5)" stroke-width="1"/>
-                <rect x="17" y="20" width="5" height="10" rx="1" fill="rgba(99,102,241,0.3)" stroke="rgba(99,102,241,0.5)" stroke-width="1"/>
-                <rect x="24" y="17" width="5" height="13" rx="1" fill="rgba(251,146,60,0.25)" stroke="rgba(251,146,60,0.5)" stroke-width="1"/>
+                <rect x="10" y="24" width="5" height="6" rx="1" fill="rgba(99,102,241,0.25)"
+                  stroke="rgba(99,102,241,0.5)" stroke-width="1" />
+                <rect x="17" y="20" width="5" height="10" rx="1" fill="rgba(99,102,241,0.3)"
+                  stroke="rgba(99,102,241,0.5)" stroke-width="1" />
+                <rect x="24" y="17" width="5" height="13" rx="1" fill="rgba(251,146,60,0.25)"
+                  stroke="rgba(251,146,60,0.5)" stroke-width="1" />
                 <!-- Magnifying glass — clear understanding -->
-                <circle cx="38" cy="34" r="7" fill="rgba(45,212,191,0.1)" stroke="rgba(45,212,191,0.6)" stroke-width="1.5"/>
-                <line x1="43" y1="39" x2="46" y2="42" stroke="rgba(45,212,191,0.6)" stroke-width="2" stroke-linecap="round"/>
-                <path d="M35 34l2 2 3-3" stroke="rgba(45,212,191,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="38" cy="34" r="7" fill="rgba(45,212,191,0.1)" stroke="rgba(45,212,191,0.6)"
+                  stroke-width="1.5" />
+                <line x1="43" y1="39" x2="46" y2="42" stroke="rgba(45,212,191,0.6)" stroke-width="2"
+                  stroke-linecap="round" />
+                <path d="M35 34l2 2 3-3" stroke="rgba(45,212,191,0.7)" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </div>
             <h3 class="wcu-card__title">Reporting</h3>
-            <p class="wcu-card__desc">Vague metrics, confusing dashboards. Clear, honest reports you can actually understand</p>
+            <p class="wcu-card__desc">Vague metrics, confusing dashboards. Clear, honest reports you can actually
+              understand</p>
           </div>
         </div>
       </div>
@@ -1628,29 +1752,37 @@
     <!-- ========== HOW IT WORKS SECTION ========== -->
     <section id="how-it-works" class="hiw-section">
       <!-- SVG Background: Orbit Rings + Floating Dots -->
-      <svg class="hiw-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <svg class="hiw-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"
+        preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <defs>
           <filter id="hiw-glow" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
           </filter>
           <linearGradient id="hiw-ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="rgba(99,102,241,0)"/>
-            <stop offset="40%" stop-color="rgba(99,102,241,0.06)"/>
-            <stop offset="60%" stop-color="rgba(251,146,60,0.04)"/>
-            <stop offset="100%" stop-color="rgba(99,102,241,0)"/>
+            <stop offset="0%" stop-color="rgba(99,102,241,0)" />
+            <stop offset="40%" stop-color="rgba(99,102,241,0.06)" />
+            <stop offset="60%" stop-color="rgba(251,146,60,0.04)" />
+            <stop offset="100%" stop-color="rgba(99,102,241,0)" />
           </linearGradient>
         </defs>
         <!-- Orbit rings -->
-        <ellipse class="hiw-orbit" cx="960" cy="540" rx="600" ry="340" fill="none" stroke="url(#hiw-ring-grad)" stroke-width="1" opacity="0.4"/>
-        <ellipse class="hiw-orbit hiw-orbit--2" cx="960" cy="540" rx="420" ry="240" fill="none" stroke="rgba(99,102,241,0.04)" stroke-width="0.8" opacity="0.3"/>
+        <ellipse class="hiw-orbit" cx="960" cy="540" rx="600" ry="340" fill="none" stroke="url(#hiw-ring-grad)"
+          stroke-width="1" opacity="0.4" />
+        <ellipse class="hiw-orbit hiw-orbit--2" cx="960" cy="540" rx="420" ry="240" fill="none"
+          stroke="rgba(99,102,241,0.04)" stroke-width="0.8" opacity="0.3" />
         <!-- Floating dots -->
-        <circle class="hiw-dot" cx="320" cy="200" r="2.5" fill="rgba(99,102,241,0.3)" filter="url(#hiw-glow)"/>
-        <circle class="hiw-dot hiw-dot--2" cx="1580" cy="320" r="2" fill="rgba(251,146,60,0.25)" filter="url(#hiw-glow)"/>
-        <circle class="hiw-dot hiw-dot--3" cx="480" cy="820" r="3" fill="rgba(168,85,247,0.2)" filter="url(#hiw-glow)"/>
-        <circle class="hiw-dot hiw-dot--4" cx="1400" cy="780" r="2" fill="rgba(45,212,191,0.2)" filter="url(#hiw-glow)"/>
+        <circle class="hiw-dot" cx="320" cy="200" r="2.5" fill="rgba(99,102,241,0.3)" filter="url(#hiw-glow)" />
+        <circle class="hiw-dot hiw-dot--2" cx="1580" cy="320" r="2" fill="rgba(251,146,60,0.25)"
+          filter="url(#hiw-glow)" />
+        <circle class="hiw-dot hiw-dot--3" cx="480" cy="820" r="3" fill="rgba(168,85,247,0.2)"
+          filter="url(#hiw-glow)" />
+        <circle class="hiw-dot hiw-dot--4" cx="1400" cy="780" r="2" fill="rgba(45,212,191,0.2)"
+          filter="url(#hiw-glow)" />
         <!-- Subtle connection lines -->
-        <line class="hiw-conn-line" x1="200" y1="400" x2="500" y2="350" stroke="rgba(99,102,241,0.04)" stroke-width="0.5"/>
-        <line class="hiw-conn-line" x1="1420" y1="380" x2="1700" y2="500" stroke="rgba(251,146,60,0.03)" stroke-width="0.5"/>
+        <line class="hiw-conn-line" x1="200" y1="400" x2="500" y2="350" stroke="rgba(99,102,241,0.04)"
+          stroke-width="0.5" />
+        <line class="hiw-conn-line" x1="1420" y1="380" x2="1700" y2="500" stroke="rgba(251,146,60,0.03)"
+          stroke-width="0.5" />
       </svg>
 
       <div class="container">
@@ -1664,7 +1796,8 @@
             <div class="text-merge-title">
               <h2 class="heading">Getting Started Is Simple</h2>
             </div>
-            <p class="hiw-section-desc">Three steps to start growing your business online. No complexity, no guesswork — just a clear path to results.</p>
+            <p class="hiw-section-desc">Three steps to start growing your business online. No complexity, no guesswork —
+              just a clear path to results.</p>
           </div>
         </div>
 
@@ -1672,8 +1805,10 @@
           style="transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
           <!-- Connector paths between cards (desktop only) -->
           <svg class="hiw-connector" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
-            <path class="hiw-connector-path" d="M400,200 C440,200 460,200 500,200" stroke="rgba(99,102,241,0.3)" stroke-width="1.5" fill="none"/>
-            <path class="hiw-connector-path" d="M800,200 C840,200 860,200 900,200" stroke="rgba(251,146,60,0.3)" stroke-width="1.5" fill="none"/>
+            <path class="hiw-connector-path" d="M400,200 C440,200 460,200 500,200" stroke="rgba(99,102,241,0.3)"
+              stroke-width="1.5" fill="none" />
+            <path class="hiw-connector-path" d="M800,200 C840,200 860,200 900,200" stroke="rgba(251,146,60,0.3)"
+              stroke-width="1.5" fill="none" />
           </svg>
 
           <!-- Step 1 -->
@@ -1681,20 +1816,25 @@
             <div class="hiw-step__icon">
               <div class="hiw-step__icon-ring"></div>
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M34 28c4.4 0 8 3.6 8 8v4H30" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="34" cy="20" r="6" stroke="#6366f1" stroke-width="2"/>
-                <path d="M22 32v4H6v-4c0-4.4 3.6-8 8-8h8c4.4 0 8 3.6 8 8" stroke="#818cf8" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="18" cy="16" r="7" stroke="#818cf8" stroke-width="2"/>
-                <path d="M15 40h10" stroke="rgba(251,146,60,0.6)" stroke-width="1.5" stroke-linecap="round"/>
-                <circle cx="38" cy="10" r="4" stroke="#fb923c" stroke-width="1.5"/>
-                <path d="M38 8v4M36 10h4" stroke="#fb923c" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M34 28c4.4 0 8 3.6 8 8v4H30" stroke="#6366f1" stroke-width="2" stroke-linecap="round" />
+                <circle cx="34" cy="20" r="6" stroke="#6366f1" stroke-width="2" />
+                <path d="M22 32v4H6v-4c0-4.4 3.6-8 8-8h8c4.4 0 8 3.6 8 8" stroke="#818cf8" stroke-width="2"
+                  stroke-linecap="round" />
+                <circle cx="18" cy="16" r="7" stroke="#818cf8" stroke-width="2" />
+                <path d="M15 40h10" stroke="rgba(251,146,60,0.6)" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="38" cy="10" r="4" stroke="#fb923c" stroke-width="1.5" />
+                <path d="M38 8v4M36 10h4" stroke="#fb923c" stroke-width="1.5" stroke-linecap="round" />
               </svg>
             </div>
             <div class="hiw-step__label">Step 1</div>
             <h3 class="hiw-step__title">Book a Free Consultation</h3>
-            <p class="hiw-step__desc">Tell us about your business, goals, and challenges. We'll listen and assess where the biggest opportunities are.</p>
+            <p class="hiw-step__desc">Tell us about your business, goals, and challenges. We'll listen and assess where
+              the biggest opportunities are.</p>
             <div class="hiw-step__arrow">
-              <svg viewBox="0 0 32 32" fill="none"><path d="M6 16h18M18 10l6 6-6 6" stroke="rgba(251,146,60,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="--arrow-len:42"/></svg>
+              <svg viewBox="0 0 32 32" fill="none">
+                <path d="M6 16h18M18 10l6 6-6 6" stroke="rgba(251,146,60,0.5)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" style="--arrow-len:42" />
+              </svg>
             </div>
           </div>
 
@@ -1703,22 +1843,28 @@
             <div class="hiw-step__icon">
               <div class="hiw-step__icon-ring"></div>
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="8" y="6" width="32" height="36" rx="3" stroke="#6366f1" stroke-width="2"/>
-                <line x1="8" y1="14" x2="40" y2="14" stroke="#6366f1" stroke-width="1.5"/>
-                <line x1="16" y1="22" x2="32" y2="22" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="16" y1="28" x2="28" y2="28" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="16" y1="34" x2="30" y2="34" stroke="rgba(99,102,241,0.4)" stroke-width="1.5" stroke-linecap="round"/>
-                <circle cx="12" cy="10" r="1.5" fill="#fb923c"/>
-                <circle cx="17" cy="10" r="1.5" fill="rgba(251,146,60,0.5)"/>
-                <circle cx="22" cy="10" r="1.5" fill="rgba(251,146,60,0.3)"/>
-                <path d="M34 30l-4 4-2-2" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="8" y="6" width="32" height="36" rx="3" stroke="#6366f1" stroke-width="2" />
+                <line x1="8" y1="14" x2="40" y2="14" stroke="#6366f1" stroke-width="1.5" />
+                <line x1="16" y1="22" x2="32" y2="22" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="16" y1="28" x2="28" y2="28" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="16" y1="34" x2="30" y2="34" stroke="rgba(99,102,241,0.4)" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <circle cx="12" cy="10" r="1.5" fill="#fb923c" />
+                <circle cx="17" cy="10" r="1.5" fill="rgba(251,146,60,0.5)" />
+                <circle cx="22" cy="10" r="1.5" fill="rgba(251,146,60,0.3)" />
+                <path d="M34 30l-4 4-2-2" stroke="#fb923c" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </div>
             <div class="hiw-step__label">Step 2</div>
             <h3 class="hiw-step__title">Get Your Custom Strategy</h3>
-            <p class="hiw-step__desc">We build a tailored digital marketing plan designed specifically for your business — no templates, no guesswork.</p>
+            <p class="hiw-step__desc">We build a tailored digital marketing plan designed specifically for your business
+              — no templates, no guesswork.</p>
             <div class="hiw-step__arrow">
-              <svg viewBox="0 0 32 32" fill="none"><path d="M6 16h18M18 10l6 6-6 6" stroke="rgba(251,146,60,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="--arrow-len:42"/></svg>
+              <svg viewBox="0 0 32 32" fill="none">
+                <path d="M6 16h18M18 10l6 6-6 6" stroke="rgba(251,146,60,0.5)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" style="--arrow-len:42" />
+              </svg>
             </div>
           </div>
 
@@ -1727,19 +1873,49 @@
             <div class="hiw-step__icon">
               <div class="hiw-step__icon-ring"></div>
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 36 L16 26 L22 30 L30 16 L38 12" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M32 12h6v6" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="16" cy="26" r="3" stroke="#818cf8" stroke-width="1.5" fill="rgba(99,102,241,0.1)"/>
-                <circle cx="30" cy="16" r="3" stroke="#818cf8" stroke-width="1.5" fill="rgba(99,102,241,0.1)"/>
-                <circle cx="38" cy="12" r="3.5" stroke="#fb923c" stroke-width="1.5" fill="rgba(251,146,60,0.1)"/>
-                <line x1="6" y1="42" x2="42" y2="42" stroke="rgba(99,102,241,0.2)" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="6" y1="42" x2="6" y2="10" stroke="rgba(99,102,241,0.2)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M10 36 L16 26 L22 30 L30 16 L38 12" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M32 12h6v6" stroke="#fb923c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="16" cy="26" r="3" stroke="#818cf8" stroke-width="1.5" fill="rgba(99,102,241,0.1)" />
+                <circle cx="30" cy="16" r="3" stroke="#818cf8" stroke-width="1.5" fill="rgba(99,102,241,0.1)" />
+                <circle cx="38" cy="12" r="3.5" stroke="#fb923c" stroke-width="1.5" fill="rgba(251,146,60,0.1)" />
+                <line x1="6" y1="42" x2="42" y2="42" stroke="rgba(99,102,241,0.2)" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <line x1="6" y1="42" x2="6" y2="10" stroke="rgba(99,102,241,0.2)" stroke-width="1.5"
+                  stroke-linecap="round" />
               </svg>
             </div>
             <div class="hiw-step__label">Step 3</div>
             <h3 class="hiw-step__title">Watch Your Business Grow</h3>
-            <p class="hiw-step__desc">We execute, optimise, and report back with clear results. You focus on your business while we handle the digital growth.</p>
+            <p class="hiw-step__desc">We execute, optimise, and report back with clear results. You focus on your
+              business while we handle the digital growth.</p>
           </div>
+        </div>
+
+        <div class="hiw-cta-wrapper">
+          <a href="#contact" class="primary-button w-inline-block">
+            <div class="button-text-wrapper-26px">
+              <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="currentColor">
+                  <rect x="1" y="1" width="6" height="6" rx="1" />
+                  <rect x="9" y="1" width="6" height="6" rx="1" />
+                  <rect x="1" y="9" width="6" height="6" rx="1" />
+                  <rect x="9" y="9" width="6" height="6" rx="1" />
+                </svg> Book Your Free Consultation</div>
+              <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="currentColor">
+                  <rect x="1" y="1" width="6" height="6" rx="1" />
+                  <rect x="9" y="1" width="6" height="6" rx="1" />
+                  <rect x="1" y="9" width="6" height="6" rx="1" />
+                  <rect x="9" y="9" width="6" height="6" rx="1" />
+                </svg> Book Your Free Consultation</div>
+            </div>
+            <div class="hover-color"></div>
+            <div class="circle-position">
+              <div class="_15px-circle"></div>
+            </div>
+            <div class="circle-position">
+              <div class="_15px-circle"></div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -1747,8 +1923,10 @@
     <!-- ========== TESTIMONIALS SECTION ========== -->
     <section id="testimonials" class="section">
       <svg class="testimonial-quote-stroke" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 62c0-18 8-36 30-44l3 7c-14 7-20 18-20 28h18v32H4V62z" stroke="currentColor" stroke-width="1.5" fill="none"/>
-        <path d="M65 62c0-18 8-36 30-44l3 7c-14 7-20 18-20 28h18v32H65V62z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <path d="M4 62c0-18 8-36 30-44l3 7c-14 7-20 18-20 28h18v32H4V62z" stroke="currentColor" stroke-width="1.5"
+          fill="none" />
+        <path d="M65 62c0-18 8-36 30-44l3 7c-14 7-20 18-20 28h18v32H65V62z" stroke="currentColor" stroke-width="1.5"
+          fill="none" />
       </svg>
       <div class="container">
         <div class="title-bar">
@@ -1758,7 +1936,7 @@
               <div class="gradient-bg">Testimonials</div>
             </div>
             <div class="text-merge-title">
-              <h2 class="heading">Review From Our Customers</h2>
+              <h2 class="heading">What Our Clients Say</h2>
             </div>
           </div>
         </div>
@@ -1779,14 +1957,14 @@
                       <div class="_16px-star-icon">star</div>
                       <div class="_16px-star-icon">star</div>
                     </div>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                      varius enim in eros elementum tristique.ae risus tristique posuere.</p>
+                    <p class="testimonial-text">Capsule Digital completely transformed our online presence. Our organic
+                      traffic doubled in four months, and we're getting leads we never had before.</p>
                     <div class="vertical-left-stretch _4px-gap">
-                      <h3 class="client-name">Ethan Reynolds</h3>
-                      <p class="_14px-text-500-secondary">Designation</p>
+                      <h3 class="client-name">James R.</h3>
+                      <p class="_14px-text-500-secondary">E-commerce Business Owner, Sydney</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1800,14 +1978,14 @@
                       <div class="_16px-star-icon">star</div>
                       <div class="_16px-star-icon">star</div>
                     </div>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                      varius enim in eros elementum tristique.ae risus tristique posuere.</p>
+                    <p class="testimonial-text">Finally an agency that actually explains what they're doing and shows
+                      real results. The team is responsive, strategic, and a pleasure to work with.</p>
                     <div class="vertical-left-stretch _4px-gap">
-                      <h3 class="client-name">Isabella Cooper</h3>
-                      <p class="_14px-text-500-secondary">Designation</p>
+                      <h3 class="client-name">Priya M.</h3>
+                      <p class="_14px-text-500-secondary">Founder, Health & Wellness Brand</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1821,14 +1999,14 @@
                       <div class="_16px-star-icon">star</div>
                       <div class="_16px-star-icon">star</div>
                     </div>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                      varius enim in eros elementum tristique.ae risus tristique posuere.</p>
+                    <p class="testimonial-text">We switched from a big-name agency to Capsule Digital and saw better
+                      results at half the cost. Wish we'd found them sooner.</p>
                     <div class="vertical-left-stretch _4px-gap">
-                      <h3 class="client-name">Mason Turner</h3>
-                      <p class="_14px-text-500-secondary">Designation</p>
+                      <h3 class="client-name">Daniel K.</h3>
+                      <p class="_14px-text-500-secondary">Director, Professional Services Firm</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1849,7 +2027,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1870,7 +2048,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1891,7 +2069,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1912,7 +2090,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1933,7 +2111,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1954,7 +2132,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1975,7 +2153,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -1996,7 +2174,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -2017,7 +2195,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -2038,7 +2216,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -2059,7 +2237,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -2080,7 +2258,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
               <div class="testimonial-slide swiper-slide">
                 <div class="testimonial-card">
@@ -2101,7 +2279,7 @@
                       <p class="_14px-text-500-secondary">Designation</p>
                     </div>
                   </div>
-                                  </div>
+                </div>
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -2283,160 +2461,153 @@
             <div class="_8px-circle"></div>
             <div class="gradient-bg">FAQ</div>
           </div>
-          <h2 class="heading">Your Service Related Questions, Answered Here</h2>
+          <h2 class="heading">Frequently Asked Questions</h2>
         </div>
         <div data-w-id="4c9f5f44-95e7-83cd-a7aa-ee065211bc98"
-            style="transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
-            class="full-width">
-              <div class="_2-column-block-top">
-                <div class="faq-image-wrapper">
-                  <img loading="lazy" src="assets/img/faq-image.jpg" alt="" class="image-660px-height" />
-                  <div class="faq-image-contents">
-                    <div>
-                      <h3 class="_24px-title-bold">Mail Us In Emergency!</h3>
+          style="transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+          class="full-width">
+          <div class="_2-column-block-top">
+            <div class="faq-image-wrapper">
+              <img loading="lazy" src="assets/img/faq-image.jpg" alt="" class="image-660px-height" />
+              <div class="faq-image-contents">
+                <div>
+                  <h3 class="_24px-title-bold">Mail Us In Emergency!</h3>
+                </div>
+                <div><a href="#contact"
+                    class="primary-button w-variant-282b738b-ee68-5bdf-6a2e-ecb2243e228f w-inline-block">
+                    <div class="button-text-wrapper-26px">
+                      <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="none"
+                          stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+                          <circle cx="8" cy="4.5" r="2.5" />
+                          <path d="M3 13.5c0-2.8 2.2-5 5-5s5 2.2 5 5" />
+                        </svg> Get In Touch</div>
+                      <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="none"
+                          stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+                          <circle cx="8" cy="4.5" r="2.5" />
+                          <path d="M3 13.5c0-2.8 2.2-5 5-5s5 2.2 5 5" />
+                        </svg> Get In Touch</div>
                     </div>
-                    <div><a href="#contact"
-                        class="primary-button w-variant-282b738b-ee68-5bdf-6a2e-ecb2243e228f w-inline-block">
-                        <div class="button-text-wrapper-26px">
-                          <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="none"
-                              stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
-                              <circle cx="8" cy="4.5" r="2.5" />
-                              <path d="M3 13.5c0-2.8 2.2-5 5-5s5 2.2 5 5" />
-                            </svg> Get In Touch</div>
-                          <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="none"
-                              stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
-                              <circle cx="8" cy="4.5" r="2.5" />
-                              <path d="M3 13.5c0-2.8 2.2-5 5-5s5 2.2 5 5" />
-                            </svg> Get In Touch</div>
-                        </div>
-                        <div class="hover-color w-variant-282b738b-ee68-5bdf-6a2e-ecb2243e228f"></div>
-                        <div class="circle-position">
-                          <div class="_15px-circle w-variant-282b738b-ee68-5bdf-6a2e-ecb2243e228f"></div>
-                        </div>
-                        <div class="circle-position">
-                          <div class="_15px-circle w-variant-282b738b-ee68-5bdf-6a2e-ecb2243e228f"></div>
-                        </div>
-                      </a></div>
-                  </div>
-                </div>
-                <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100"
-                  class="faq-dropdown-wrapper w-tabs">
-                  <div class="vertical-left-top-16px-gap w-tab-menu">
-                    <a data-w-tab="Tab 1" class="faq-accordion w-inline-block w-tab-link w--current">
-                      <div class="accordion-switch">
-                        <div class="faq-title-18px">What services does MarketingFlow offer?</div>
-                        <div class="dropdown-cross-animation">
-                          <div class="plus-sign-vertical"></div>
-                          <div class="plus-sign"></div>
-                        </div>
-                      </div>
-                      <div class="accordion-body">
-                        <p class="description">We offer a full suite of digital marketing services including SEO &amp; content marketing, social media management, paid advertising (Google Ads, Meta Ads), branding &amp; design, lead generation, and analytics &amp; tracking. Each service is tailored to your specific business goals.</p>
-                      </div>
-                    </a>
-                    <a data-w-tab="Tab 2" class="faq-accordion w-inline-block w-tab-link">
-                      <div class="accordion-switch">
-                        <div class="faq-title-18px">How do I get started with MarketingFlow?</div>
-                        <div class="dropdown-cross-animation">
-                          <div class="plus-sign-vertical"></div>
-                          <div class="plus-sign"></div>
-                        </div>
-                      </div>
-                      <div class="accordion-body">
-                        <p class="description">Getting started is simple. Reach out through our contact form or give us a call. We'll schedule a free discovery call to understand your business, goals, and challenges. From there, our team builds a custom strategy and presents it to you for approval before we begin.</p>
-                      </div>
-                    </a>
-                    <a data-w-tab="Tab 3" class="faq-accordion w-inline-block w-tab-link">
-                      <div class="accordion-switch">
-                        <div class="faq-title-18px">How long does it take to see results?</div>
-                        <div class="dropdown-cross-animation">
-                          <div class="plus-sign-vertical"></div>
-                          <div class="plus-sign"></div>
-                        </div>
-                      </div>
-                      <div class="accordion-body">
-                        <p class="description">Timelines vary by service. Paid advertising campaigns can drive traffic within days, while SEO and content marketing typically show meaningful results in 3 to 6 months. We set clear expectations upfront and provide monthly reports so you can track progress every step of the way.</p>
-                      </div>
-                    </a>
-                    <a data-w-tab="Tab 4" class="faq-accordion w-inline-block w-tab-link">
-                      <div class="accordion-switch">
-                        <div class="faq-title-18px">Do you work with small businesses or only large companies?</div>
-                        <div class="dropdown-cross-animation">
-                          <div class="plus-sign-vertical"></div>
-                          <div class="plus-sign"></div>
-                        </div>
-                      </div>
-                      <div class="accordion-body">
-                        <p class="description">We work with businesses of all sizes — from early-stage startups to established enterprises. Our strategies are fully customized, so whether you're working with a modest budget or scaling aggressively, we build a plan that fits your needs and delivers maximum ROI.</p>
-                      </div>
-                    </a>
-                    <a data-w-tab="Tab 5" class="faq-accordion w-inline-block w-tab-link">
-                      <div class="accordion-switch">
-                        <div class="faq-title-18px">What makes MarketingFlow different from other agencies?</div>
-                        <div class="dropdown-cross-animation">
-                          <div class="plus-sign-vertical"></div>
-                          <div class="plus-sign"></div>
-                        </div>
-                      </div>
-                      <div class="accordion-body">
-                        <p class="description">We combine data-driven decision making with creative excellence. Unlike agencies that offer one-size-fits-all packages, every strategy we build is unique to your brand. Plus, we provide transparent reporting, dedicated account managers, and 24/7 support so you're never left in the dark.</p>
-                      </div>
-                    </a>
-                    <a data-w-tab="Tab 6" class="faq-accordion w-inline-block w-tab-link">
-                      <div class="accordion-switch">
-                        <div class="faq-title-18px">How do you measure and report campaign performance?</div>
-                        <div class="dropdown-cross-animation">
-                          <div class="plus-sign-vertical"></div>
-                          <div class="plus-sign"></div>
-                        </div>
-                      </div>
-                      <div class="accordion-body">
-                        <p class="description">We use industry-leading analytics tools to track KPIs such as traffic, conversions, cost per lead, and ROI. You'll receive detailed monthly reports with clear breakdowns, and your dedicated account manager is always available to walk you through the numbers and adjust strategy as needed.</p>
-                      </div>
-                    </a>
-                    <a data-w-tab="Tab 7" class="faq-accordion w-inline-block w-tab-link">
-                      <div class="accordion-switch">
-                        <div class="faq-title-18px">Can I cancel or change my plan at any time?</div>
-                        <div class="dropdown-cross-animation">
-                          <div class="plus-sign-vertical"></div>
-                          <div class="plus-sign"></div>
-                        </div>
-                      </div>
-                      <div class="accordion-body">
-                        <p class="description">Absolutely. We believe in earning your business every month, not locking you into rigid contracts. You can upgrade, downgrade, or cancel your plan with 30 days' notice. We're confident that once you see the results, you'll want to keep growing with us.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="hidden w-tab-content">
-                    <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active"></div>
-                    <div data-w-tab="Tab 2" class="w-tab-pane"></div>
-                    <div data-w-tab="Tab 3" class="w-tab-pane"></div>
-                    <div data-w-tab="Tab 4" class="w-tab-pane"></div>
-                    <div data-w-tab="Tab 5" class="w-tab-pane"></div>
-                    <div data-w-tab="Tab 6" class="w-tab-pane"></div>
-                    <div data-w-tab="Tab 7" class="w-tab-pane"></div>
-                  </div>
-                </div>
+                    <div class="hover-color w-variant-282b738b-ee68-5bdf-6a2e-ecb2243e228f"></div>
+                    <div class="circle-position">
+                      <div class="_15px-circle w-variant-282b738b-ee68-5bdf-6a2e-ecb2243e228f"></div>
+                    </div>
+                    <div class="circle-position">
+                      <div class="_15px-circle w-variant-282b738b-ee68-5bdf-6a2e-ecb2243e228f"></div>
+                    </div>
+                  </a></div>
               </div>
             </div>
+            <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100"
+              class="faq-dropdown-wrapper w-tabs">
+              <div class="vertical-left-top-16px-gap w-tab-menu">
+                <a data-w-tab="Tab 1" class="faq-accordion w-inline-block w-tab-link w--current">
+                  <div class="accordion-switch">
+                    <div class="faq-title-18px">What industries do you work with?</div>
+                    <div class="dropdown-cross-animation">
+                      <div class="plus-sign-vertical"></div>
+                      <div class="plus-sign"></div>
+                    </div>
+                  </div>
+                  <div class="accordion-body">
+                    <p class="description">We work with businesses across all industries including e-commerce,
+                      professional services, healthcare, real estate, hospitality, fitness, and more. If you operate
+                      online, we can help you grow.</p>
+                  </div>
+                </a>
+                <a data-w-tab="Tab 2" class="faq-accordion w-inline-block w-tab-link">
+                  <div class="accordion-switch">
+                    <div class="faq-title-18px">How much do your services cost?</div>
+                    <div class="dropdown-cross-animation">
+                      <div class="plus-sign-vertical"></div>
+                      <div class="plus-sign"></div>
+                    </div>
+                  </div>
+                  <div class="accordion-body">
+                    <p class="description">We offer flexible packages designed for businesses of all sizes. Pricing
+                      depends on your goals and scope. Book a free consultation and we'll provide a custom quote — no
+                      obligation.
+                    </p>
+                  </div>
+                </a>
+                <a data-w-tab="Tab 3" class="faq-accordion w-inline-block w-tab-link">
+                  <div class="accordion-switch">
+                    <div class="faq-title-18px">Do you lock clients into long-term contracts?</div>
+                    <div class="dropdown-cross-animation">
+                      <div class="plus-sign-vertical"></div>
+                      <div class="plus-sign"></div>
+                    </div>
+                  </div>
+                  <div class="accordion-body">
+                    <p class="description">No. We don't believe in lock-in contracts. We work on a month-to-month basis
+                      because we believe in earning your trust through results, not paperwork.</p>
+                  </div>
+                </a>
+                <a data-w-tab="Tab 4" class="faq-accordion w-inline-block w-tab-link">
+                  <div class="accordion-switch">
+                    <div class="faq-title-18px">How soon will I see results?</div>
+                    <div class="dropdown-cross-animation">
+                      <div class="plus-sign-vertical"></div>
+                      <div class="plus-sign"></div>
+                    </div>
+                  </div>
+                  <div class="accordion-body">
+                    <p class="description">Paid advertising can deliver results within days. SEO and organic social
+                      media typically take 3–6 months to build momentum. We'll set clear expectations from day one.</p>
+                  </div>
+                </a>
+                <a data-w-tab="Tab 5" class="faq-accordion w-inline-block w-tab-link">
+                  <div class="accordion-switch">
+                    <div class="faq-title-18px">I'm a small business with a limited budget. Can you still help?</div>
+                    <div class="dropdown-cross-animation">
+                      <div class="plus-sign-vertical"></div>
+                      <div class="plus-sign"></div>
+                    </div>
+                  </div>
+                  <div class="accordion-body">
+                    <p class="description">Absolutely. We've built our packages specifically to be accessible for small
+                      businesses. We'll work with your budget to prioritise the channels that will deliver the best
+                      return..</p>
+                  </div>
+                </a>
+              </div>
+              <div class="hidden w-tab-content">
+                <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active"></div>
+                <div data-w-tab="Tab 2" class="w-tab-pane"></div>
+                <div data-w-tab="Tab 3" class="w-tab-pane"></div>
+                <div data-w-tab="Tab 4" class="w-tab-pane"></div>
+                <div data-w-tab="Tab 5" class="w-tab-pane"></div>
+                <div data-w-tab="Tab 6" class="w-tab-pane"></div>
+                <div data-w-tab="Tab 7" class="w-tab-pane"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ========== CTA BANNER SECTION ========== -->
     <section id="cta-banner" class="cta-banner-section">
       <!-- Decorative envelope icon — top-left -->
-      <svg class="cta-envelope-icon" viewBox="0 0 120 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="2" y="2" width="116" height="92" rx="8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M2 10l54.5 40a6 6 0 006.9 0L118 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M2 86l38-34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M80 52l38 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg class="cta-envelope-icon" viewBox="0 0 120 96" fill="none" xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true">
+        <rect x="2" y="2" width="116" height="92" rx="8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M2 10l54.5 40a6 6 0 006.9 0L118 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M2 86l38-34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M80 52l38 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round" />
       </svg>
       <!-- SVG Background: Radial Pulse Waves -->
-      <svg class="cta-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <svg class="cta-bg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600"
+        preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <!-- Concentric pulse rings -->
-        <circle class="cta-ring cta-ring--1" cx="960" cy="300" r="120" fill="none" stroke="rgba(168,85,247,0.08)" stroke-width="1" />
-        <circle class="cta-ring cta-ring--2" cx="960" cy="300" r="220" fill="none" stroke="rgba(236,72,153,0.06)" stroke-width="1" />
-        <circle class="cta-ring cta-ring--3" cx="960" cy="300" r="340" fill="none" stroke="rgba(168,85,247,0.04)" stroke-width="1" />
+        <circle class="cta-ring cta-ring--1" cx="960" cy="300" r="120" fill="none" stroke="rgba(168,85,247,0.08)"
+          stroke-width="1" />
+        <circle class="cta-ring cta-ring--2" cx="960" cy="300" r="220" fill="none" stroke="rgba(236,72,153,0.06)"
+          stroke-width="1" />
+        <circle class="cta-ring cta-ring--3" cx="960" cy="300" r="340" fill="none" stroke="rgba(168,85,247,0.04)"
+          stroke-width="1" />
         <!-- Floating sparkle dots -->
         <circle class="cta-sparkle cta-sparkle--1" cx="400" cy="150" r="2" fill="rgba(251,146,60,0.5)" />
         <circle class="cta-sparkle cta-sparkle--2" cx="1500" cy="200" r="2.5" fill="rgba(168,85,247,0.5)" />
@@ -2449,12 +2620,20 @@
         <div class="cta-banner-inner" data-w-id="cta-banner-inner"
           style="transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
           <div class="cta-banner__badge">Ready to Grow?</div>
-          <h2 class="cta-banner__heading">Ready to Grow Your <span class="cta-banner__heading-accent">Business?</span></h2>
-          <p class="cta-banner__text">Book a free consultation with our Sydney team. No pressure, no obligation — just an honest conversation about how we can help your business grow online.</p>
+          <h2 class="cta-banner__heading">Ready to Grow Your <span class="cta-banner__heading-accent">Business?</span>
+          </h2>
+          <p class="cta-banner__text">Book a free consultation with our Sydney team. No pressure, no obligation — just
+            an honest conversation about how we can help your business grow online.</p>
           <a href="/#contact" class="primary-button cta-banner__btn w-inline-block">
             <div class="button-text-wrapper-26px">
-              <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h14M9 2l6 6-6 6"/></svg> Book Your Free Consultation</div>
-              <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h14M9 2l6 6-6 6"/></svg> Book Your Free Consultation</div>
+              <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                  stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 8h14M9 2l6 6-6 6" />
+                </svg> Book Your Free Consultation</div>
+              <div class="default-text"><svg class="btn-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                  stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 8h14M9 2l6 6-6 6" />
+                </svg> Book Your Free Consultation</div>
             </div>
             <div class="hover-color"></div>
             <div class="circle-position">
