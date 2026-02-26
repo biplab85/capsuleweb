@@ -2772,6 +2772,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
   }
 
+  .projects-mobile-title {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
   .projects-mobile-swiper .portfolio-card {
     display: block;
     border-radius: 20px;
