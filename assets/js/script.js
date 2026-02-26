@@ -6,6 +6,33 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  // ========== PAGE PRELOADER ==========
+  var preloader = document.getElementById('page-preloader');
+  if (preloader) {
+    document.body.style.overflow = 'hidden';
+    var minDisplayTime = 1800; // minimum ms to show the logo animation
+    var loadStart = Date.now();
+
+    function dismissPreloader() {
+      var elapsed = Date.now() - loadStart;
+      var remaining = Math.max(0, minDisplayTime - elapsed);
+      setTimeout(function () {
+        preloader.classList.add('preloader-exit');
+        preloader.addEventListener('transitionend', function handler() {
+          preloader.remove();
+          document.body.style.overflow = '';
+          preloader.removeEventListener('transitionend', handler);
+        });
+      }, remaining);
+    }
+
+    if (document.readyState === 'complete') {
+      dismissPreloader();
+    } else {
+      window.addEventListener('load', dismissPreloader);
+    }
+  }
+
   // ========== HERO FADE IN ==========
   var heroContainer = document.querySelector('.container.hero');
   if (heroContainer) {
@@ -300,21 +327,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // ========== PROJECTS MOBILE SWIPER ==========
+  if (typeof Swiper !== 'undefined' && window.innerWidth <= 767) {
+    var projectsSwiperEl = document.querySelector('.projects-swiper');
+    if (projectsSwiperEl) {
+      new Swiper(projectsSwiperEl, {
+        slidesPerView: 1,
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: 16,
+        speed: 650,
+        grabCursor: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.projects-swiper-pagination',
+          clickable: true
+        }
+      });
+    }
+  }
+
   // ========== FANCYBOX ==========
   if (typeof Fancybox !== 'undefined') {
-    Fancybox.bind('[data-fancybox="projects"]', {
-      animated: true,
-      showClass: 'fancybox-fadeIn',
-      hideClass: 'fancybox-fadeOut',
-      Images: { zoom: true },
-      Toolbar: {
-        display: {
-          left: [],
-          middle: [],
-          right: ['close']
-        }
-      }
-    });
   }
 
   // ========== HORIZONTAL SCROLL (Projects Section) ==========

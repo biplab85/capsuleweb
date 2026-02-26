@@ -3638,7 +3638,11 @@ label {
 
 .portfolio-thumbnail {
     height: 100%;
-    min-height: 360px
+    min-height: 360px;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    object-position: top;
+    min-height: auto;
 }
 
 .black-overlay {

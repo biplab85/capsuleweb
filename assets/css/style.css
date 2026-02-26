@@ -40,6 +40,101 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   Page Preloader
+   ============================================ */
+#page-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+  will-change: transform;
+}
+
+#page-preloader.preloader-exit {
+  transform: translateY(-100%);
+}
+
+.preloader-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-logo {
+  width: 260px;
+  height: auto;
+  display: block;
+}
+
+/* Preloader logo animations (mirror hero logo) */
+.pl-capsule {
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+  animation: hl-stroke-in 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards,
+             hl-capsule-redraw 5s ease-in-out 2s infinite;
+}
+
+.pl-orbit {
+  stroke-dasharray: 14 62;
+  opacity: 0;
+  animation: hl-orbit-show 0.6s ease 1.6s forwards,
+             hl-orbit-spin 3.5s linear 1.8s infinite;
+}
+
+.pl-dot {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.pl-dot1 {
+  transform-origin: 10px 18px;
+  animation: hl-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.8s forwards;
+}
+
+.pl-dot2 {
+  transform-origin: 17px 18px;
+  animation: hl-pop-dim 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 1s forwards;
+}
+
+.pl-text-stroke {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: hl-stroke-in 1.4s ease 0.4s forwards,
+             hl-stroke-fade 0.6s ease 1.6s forwards;
+}
+
+.pl-text-fill {
+  opacity: 0;
+  animation: hl-appear 0.8s ease 1.4s forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #page-preloader {
+    transition: opacity 0.3s ease;
+  }
+  #page-preloader.preloader-exit {
+    transform: none;
+    opacity: 0;
+  }
+  .pl-capsule { stroke-dashoffset: 0; animation: none; }
+  .pl-dot { opacity: 1; transform: none; animation: none; }
+  .pl-dot2 { opacity: 0.6; }
+  .pl-text-stroke { opacity: 0; animation: none; }
+  .pl-text-fill { opacity: 1; animation: none; }
+  .pl-orbit { opacity: 0; animation: none; }
+}
+
+@media screen and (max-width: 767px) {
+  .preloader-logo {
+    width: 200px;
+  }
+}
+
+/* ============================================
    Navbar: Bottom-fixed floating pill (Desio style)
    ============================================ */
 
@@ -2657,6 +2752,63 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     gap: 10px;
     width: 100%;
+  }
+}
+
+/* Projects mobile swiper - hidden on desktop */
+.projects-mobile-swiper {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* Hide desktop projects layout on mobile */
+  .camera {
+    display: none !important;
+  }
+
+  /* Show mobile swiper */
+  .projects-mobile-swiper {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .projects-mobile-swiper .portfolio-card {
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid var(--border);
+  }
+
+  .projects-mobile-swiper .portfolio-thumbnail {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    object-position: top;
+    min-height: auto;
+    height: auto;
+  }
+
+  .projects-swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+  }
+
+  .projects-swiper-pagination .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .projects-swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--primary);
+    transform: scale(1.25);
   }
 }
 
