@@ -3885,9 +3885,27 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
   }
 
+  /* Services – disable all animations and fix visibility on mobile */
+  #services.section.flex-center {
+    overflow: visible !important;
+  }
+  #services .w-tabs {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .testimonial-card-wrapper .tab-link-no-css {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .testimonial-card-wrapper.w-tab-menu .service-heading-wrapper {
+    margin-bottom: 0 !important;
+  }
+
   /* Services – compact service cards for mobile */
   .testimonial-card-wrapper.w-tab-menu {
-    gap: 25px;
+    gap: 10px;
   }
   .testimonial-card-wrapper.w-tab-menu .tab-link-no-css {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
