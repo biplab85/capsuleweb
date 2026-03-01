@@ -637,7 +637,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   display: block;
   position: absolute;
-  top: -150px;
+  top: -100px;
 }
 
 /* Icon: Capsule stroke draw-in + continuous loop */
@@ -931,7 +931,7 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial-image-wrapper {
   border-radius: 0;
   width: 100%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 2 / 2;
   position: relative;
   overflow: hidden;
 }

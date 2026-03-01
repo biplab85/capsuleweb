@@ -287,17 +287,14 @@ document.addEventListener('DOMContentLoaded', function () {
       testimonialSwiper = new Swiper(testimonialEl, {
         slidesPerView: 1,
         centeredSlides: true,
-        loop: !isDesktop,
+        loop: true,
         spaceBetween: 24,
         speed: 650,
-        grabCursor: !isDesktop,
-        allowTouchMove: !isDesktop,
-        simulateTouch: !isDesktop,
-        keyboard: isDesktop ? false : { enabled: true },
-        autoplay: isDesktop ? false : {
-          delay: 3000,
-          disableOnInteraction: false
-        },
+        grabCursor: true,
+        allowTouchMove: true,
+        simulateTouch: true,
+        keyboard: true,
+        autoplay: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true
