@@ -280,16 +280,21 @@ document.addEventListener('DOMContentLoaded', function () {
     var testimonialEl = document.querySelector('.testimonial-slider');
     var testimonialSwiper = null;
 
+    var isDesktop = window.innerWidth >= 992;
+
     function initTestimonialSwiper() {
       if (testimonialSwiper) return;
       testimonialSwiper = new Swiper(testimonialEl, {
         slidesPerView: 1,
         centeredSlides: true,
-        loop: true,
+        loop: !isDesktop,
         spaceBetween: 24,
         speed: 650,
-        grabCursor: true,
-        autoplay: {
+        grabCursor: !isDesktop,
+        allowTouchMove: !isDesktop,
+        simulateTouch: !isDesktop,
+        keyboard: isDesktop ? false : { enabled: true },
+        autoplay: isDesktop ? false : {
           delay: 3000,
           disableOnInteraction: false
         },
@@ -305,25 +310,35 @@ document.addEventListener('DOMContentLoaded', function () {
             slidesPerView: 3
           },
           1400: {
-            slidesPerView: 4
+            slidesPerView: 3
           }
         }
       });
+
+      // Desktop: hide nav arrows and pagination since slider is static
+      if (isDesktop) {
+        var navWrapper = document.querySelector('.testimonials-nav-wrapper');
+        var pagination = testimonialEl.querySelector('.swiper-pagination');
+        if (navWrapper) navWrapper.style.display = 'none';
+        if (pagination) pagination.style.display = 'none';
+      }
     }
 
-    // Init immediately — also restart autoplay on visibility
+    // Init immediately — also restart autoplay on visibility (mobile only)
     initTestimonialSwiper();
 
-    var testimonialSection = document.querySelector('#testimonials');
-    if (testimonialSection) {
-      var swiperObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting && testimonialSwiper) {
-            testimonialSwiper.autoplay.start();
-          }
-        });
-      }, { threshold: 0.1 });
-      swiperObserver.observe(testimonialSection);
+    if (!isDesktop) {
+      var testimonialSection = document.querySelector('#testimonials');
+      if (testimonialSection) {
+        var swiperObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting && testimonialSwiper) {
+              testimonialSwiper.autoplay.start();
+            }
+          });
+        }, { threshold: 0.1 });
+        swiperObserver.observe(testimonialSection);
+      }
     }
   }
 

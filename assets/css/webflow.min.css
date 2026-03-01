@@ -3345,7 +3345,7 @@ label {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 65%;
     max-width: 1000px;
     margin-left: auto;
     display: flex;
