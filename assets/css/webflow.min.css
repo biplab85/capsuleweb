@@ -4612,7 +4612,6 @@ label {
 .footer-wrapper {
     grid-column-gap: 40px;
     grid-row-gap: 60px;
-    border-top: 1px solid #686868;
     border-bottom: 1px solid #686868;
     grid-template-rows: auto;
     grid-template-columns: 1fr .5fr .5fr .75fr;
@@ -4620,7 +4619,7 @@ label {
     justify-content: space-between;
     place-items: flex-start start;
     margin-top: 50px;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
     display: grid;
     overflow: hidden
