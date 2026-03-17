@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="c" width="1200" height="630"></canvas>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+
+// Dark background
+ctx.fillStyle = '#0f1117';
+ctx.fillRect(0, 0, 1200, 630);
+
+// Subtle border accent
+ctx.strokeStyle = '#ff9a5c';
+ctx.lineWidth = 3;
+ctx.strokeRect(40, 40, 1120, 550);
+
+// Load the logo and draw it smaller & centered
+const img = new Image();
+img.onload = function() {
+  const maxW = 480, maxH = 160;
+  let w = img.width, h = img.height;
+  const scale = Math.min(maxW / w, maxH / h);
+  w *= scale;
+  h *= scale;
+  const x = (1200 - w) / 2;
+  const y = 200;
+  ctx.drawImage(img, x, y, w, h);
+
+  // Tagline
+  ctx.fillStyle = '#cccccc';
+  ctx.font = '400 26px "Segoe UI", Arial, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText("Sydney's Full-Service Digital Marketing Agency", 600, y + h + 55);
+
+  // Website URL
+  ctx.fillStyle = '#ff9a5c';
+  ctx.font = '400 20px "Segoe UI", Arial, sans-serif';
+  ctx.fillText('www.capsuledigital.com.au', 600, y + h + 95);
+
+  // Auto download
+  const link = document.createElement('a');
+  link.download = 'og-image.png';
+  link.href = canvas.toDataURL('image/png');
+  link.click();
+};
+img.src = 'capsuleDIGITAL.png';
+</script>
+</body>
+</html>
