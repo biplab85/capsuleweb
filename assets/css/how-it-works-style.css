@@ -877,6 +877,10 @@
     min-height: 100svh;
   }
 
+  .hiw-hero-content .inner-logo {
+    display: none;
+  }
+
   .hiw-hero-logo {
     width: 200px;
     margin-bottom: 20px;

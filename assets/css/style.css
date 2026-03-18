@@ -3,6 +3,10 @@
    Base styles from Webflow CDN
    ============================================ */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #000;
   --primary: #ffa66b;

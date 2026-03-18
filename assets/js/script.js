@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var isDesktop = window.innerWidth >= 992;
 
     function initTestimonialSwiper() {
-      if (testimonialSwiper) return;
+      if (testimonialSwiper || !testimonialEl) return;
       testimonialSwiper = new Swiper(testimonialEl, {
         slidesPerView: 1,
         centeredSlides: true,

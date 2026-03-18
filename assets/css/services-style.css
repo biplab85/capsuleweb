@@ -410,6 +410,11 @@
   );
 }
 
+/* Hide inline detail-desc on desktop (only visible on mobile) */
+.sv-card-image-overlay .sv-detail-desc {
+  display: none;
+}
+
 /* Card icon (on image) */
 .sv-card-icon {
   width: 44px;
@@ -1073,6 +1078,8 @@
     grid-template-columns: 1fr;
     gap: 50px;
     text-align: center;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .sv-hero-desc {
@@ -1115,6 +1122,83 @@
 
   .sv-process-steps::before {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sv-hero-content .inner-logo {
+    display: none;
+  }
+  .sv-hero-visual {
+    display: none;
+  }
+
+  /* Disable hover effects on cards */
+  .sv-card:hover {
+    transform: none;
+    border-color: rgba(255, 255, 255, 0.06);
+    box-shadow: none;
+  }
+  .sv-card:hover .sv-card-icon {
+    background: rgba(255, 166, 107, 0.12);
+    transform: none;
+  }
+  .sv-card:hover .sv-card-num {
+    color: rgba(255, 255, 255, 0.25);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+  .sv-card:hover .sv-card-title {
+    color: #fff;
+  }
+  .sv-card:hover .sv-card-image-overlay {
+    background: linear-gradient(to top, rgba(5, 5, 16, 0.92) 0%, rgba(5, 5, 16, 0.5) 50%, rgba(5, 5, 16, 0.2) 100%);
+  }
+
+  /* Hide card body on mobile */
+  .sv-card-body {
+    display: none;
+  }
+
+  /* Hide detail panel popup on mobile */
+  .sv-detail-panel {
+    display: none;
+  }
+
+  /* Show sv-detail-desc inside overlay on mobile */
+  .sv-card-image-overlay .sv-detail-desc {
+    display: block;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 10px 0 0;
+  }
+
+  /* Process steps as cards on mobile */
+  .sv-step {
+    border-radius: 16px;
+    padding: 28px 20px;
+  }
+  .sv-step:nth-child(1) {
+    background: rgba(255, 166, 107, 0.05);
+    border: 1px solid rgba(255, 166, 107, 0.12);
+  }
+  .sv-step:nth-child(2) {
+    background: rgba(91, 155, 213, 0.05);
+    border: 1px solid rgba(91, 155, 213, 0.12);
+  }
+  .sv-step:nth-child(3) {
+    background: rgba(45, 212, 191, 0.05);
+    border: 1px solid rgba(45, 212, 191, 0.12);
+  }
+  .sv-step:nth-child(4) {
+    background: rgba(167, 139, 250, 0.05);
+    border: 1px solid rgba(167, 139, 250, 0.12);
+  }
+
+  /* Disable partner dimming */
+  .sv-card-wrap {
+    opacity: 1 !important;
   }
 }
 
