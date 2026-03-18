@@ -1,0 +1,1143 @@
+/* ═══════════════════════════════════════════════════════════
+   SERVICES PAGE — Custom Styles
+   Capsule Digital | Premium Agency Design
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── HERO ─── */
+.sv-hero {
+  position: relative;
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  background: #050510;
+  overflow: hidden;
+  padding: 115px 0 100px;
+}
+
+.sv-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sv-hero-noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-size: 200px;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sv-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  min-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.sv-hero-container .inner-logo {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+/* Left content */
+.sv-hero-content {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: svFadeUp 0.8s 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.sv-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary);
+  border: 1px solid rgba(255, 166, 107, 0.25);
+  border-radius: 100px;
+  padding: 10px 22px;
+  margin-bottom: 28px;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 166, 107, 0.04);
+}
+
+.sv-hero-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  animation: svPulse 2s ease-in-out infinite;
+}
+
+.sv-hero-headline {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.08;
+  color: #fff;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.sv-hero-headline-accent {
+  display: block;
+  background: linear-gradient(135deg, #ffa66b, #ff7a30, #ff5e14);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sv-hero-desc {
+  font-family: "Barlow", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 36px;
+  max-width: 440px;
+}
+
+.sv-hero-cta {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sv-hero-cta .primary-button {
+  display: flex;
+  align-items: center;
+}
+
+.sv-hero-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sv-hero-stat-num {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--primary);
+}
+
+.sv-hero-stat-label {
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Right: Hexagonal grid SVG */
+.sv-hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  animation: svFadeUp 1s 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.sv-hex-grid {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+}
+
+/* Hex cell hover glow */
+.sv-hex-cell {
+  cursor: default;
+  transition: filter 0.4s ease;
+}
+.sv-hex-cell:hover {
+  filter: brightness(1.3) drop-shadow(0 0 12px rgba(255, 166, 107, 0.3));
+}
+
+/* Floating service badges around visual */
+.sv-float-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 100px;
+  padding: 8px 16px;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.sv-float-badge svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.sv-float-badge--1 {
+  top: 8%;
+  right: -8%;
+  animation: svFloat1 6s ease-in-out infinite;
+}
+.sv-float-badge--2 {
+  bottom: 18%;
+  left: -10%;
+  animation: svFloat2 7s ease-in-out infinite;
+}
+.sv-float-badge--3 {
+  top: 40%;
+  right: -14%;
+  animation: svFloat3 5.5s ease-in-out infinite;
+}
+.sv-float-badge--4 {
+  bottom: 5%;
+  right: 5%;
+  animation: svFloat1 8s ease-in-out 1s infinite;
+}
+
+/* Hero vertical title (left side, like about page) */
+.sv-vertical-title {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  font-family: var(--fonts--heading);
+  font-size: clamp(64px, 8vw, 100px);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.07);
+  pointer-events: none;
+  z-index: 2;
+  user-select: none;
+  line-height: 1;
+}
+
+/* Hero vertical text (right side) */
+.sv-hero-vertical {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ─── SERVICES OVERVIEW INTRO ─── */
+.sv-overview {
+  position: relative;
+  padding: 120px 0 80px;
+  background: #050510;
+  overflow: hidden;
+}
+
+.sv-overview-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sv-overview-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.sv-section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary);
+  border: 1px solid rgba(255, 166, 107, 0.2);
+  border-radius: 100px;
+  padding: 8px 22px;
+  margin-bottom: 24px;
+  background: rgba(255, 166, 107, 0.03);
+}
+
+.sv-section-heading {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.sv-section-heading .accent {
+  background: linear-gradient(135deg, #ffa66b, #ff7a30);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sv-overview-desc {
+  font-family: "Barlow", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ─── SERVICES CARDS GRID ─── */
+.sv-cards-section {
+  position: relative;
+  padding: 40px 0 120px;
+  background: #050510;
+  overflow: visible;
+}
+
+.sv-cards-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sv-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  grid-auto-rows: 500px;
+  gap: 28px;
+  overflow: visible;
+}
+
+.sv-cards-grid > .sv-card-wrap,
+.sv-cards-grid > .sv-card--static {
+  min-height: 0;
+}
+
+.sv-cards-grid > .sv-card-wrap > .sv-card {
+  height: 100%;
+}
+
+/* Service Card */
+.sv-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  overflow: hidden;
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+  cursor: default;
+}
+
+.sv-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 166, 107, 0.15);
+  box-shadow:
+    0 20px 60px -15px rgba(255, 166, 107, 0.08),
+    0 0 0 1px rgba(255, 166, 107, 0.05);
+}
+
+/* Card image area */
+.sv-card-image {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sv-card-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(5, 5, 16, 0.92) 0%,
+    rgba(5, 5, 16, 0.5) 50%,
+    rgba(5, 5, 16, 0.2) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px 28px;
+  transition: background 0.4s ease;
+}
+
+.sv-card:hover .sv-card-image-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(5, 5, 16, 0.95) 0%,
+    rgba(5, 5, 16, 0.55) 50%,
+    rgba(5, 5, 16, 0.25) 100%
+  );
+}
+
+/* Card icon (on image) */
+.sv-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 166, 107, 0.12);
+  border: 1px solid rgba(255, 166, 107, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  backdrop-filter: blur(8px);
+  transition:
+    background 0.3s ease,
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sv-card:hover .sv-card-icon {
+  background: rgba(255, 166, 107, 0.2);
+  transform: scale(1.05);
+}
+
+.sv-card-icon svg {
+  width: 22px;
+  height: 22px;
+  color: var(--primary);
+}
+
+/* Card number (on image) */
+.sv-card-num {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.25);
+  line-height: 1;
+  pointer-events: none;
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.6),
+    0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+.sv-card:hover .sv-card-num {
+  color: rgba(255, 166, 107, 0.4);
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.7),
+    0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Card title (on image) */
+.sv-card-title {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.sv-card:hover .sv-card-title {
+  color: var(--primary);
+}
+
+/* Card body — hidden, description only in detail panel */
+.sv-card-body {
+  display: none;
+}
+
+/* ─── CARD WRAPPER (for detail panel positioning) ─── */
+.sv-card-wrap {
+  position: relative;
+}
+
+/* ─── DETAIL PANEL ─── */
+.sv-detail-panel {
+  position: absolute;
+  top: -15px;
+  width: 530px;
+  height: 500px;
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none;
+  /* Exit: slower, ease-in for natural deceleration */
+  transition:
+    opacity 0.35s cubic-bezier(0.4, 0, 1, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 1, 1);
+}
+
+/* Default: panel slides from right */
+.sv-detail-panel {
+  left: calc(100% + 22px);
+  transform: translateX(30px) scale(0.94);
+}
+
+/* JS-controlled class for left-side panels */
+.sv-detail-panel.sv-detail--left {
+  left: auto;
+  right: calc(100% + 22px);
+  transform: translateX(-30px) scale(0.94);
+}
+
+/* Invisible bridge to prevent hover flicker */
+.sv-detail-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  right: 100%;
+}
+
+.sv-detail-panel.sv-detail--left::before {
+  right: auto;
+  left: 100%;
+}
+
+/* Show on wrapper hover */
+.sv-card-wrap:hover .sv-detail-panel {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  pointer-events: auto;
+  /* Enter: snappy spring-like overshoot */
+  transition:
+    opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.45s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.sv-detail-inner {
+  position: relative;
+  background: rgba(8, 8, 18, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 166, 107, 0.1);
+  border-radius: 20px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* Staggered inner fade — hidden by default */
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.25s cubic-bezier(0.4, 0, 1, 1),
+    transform 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+
+/* Inner content reveals with delay after panel slides in */
+.sv-card-wrap:hover .sv-detail-inner {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1) 0.1s,
+    transform 0.4s cubic-bezier(0.34, 1.4, 0.64, 1) 0.1s;
+  box-shadow:
+    0 30px 80px -15px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 166, 107, 0.04),
+    0 0 60px -20px rgba(255, 166, 107, 0.06);
+}
+
+/* Subtle top-edge glow line */
+.sv-detail-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 166, 107, 0.25),
+    transparent
+  );
+  border-radius: 1px;
+}
+
+/* Detail panel large number */
+.sv-detail-num {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 166, 107, 0.15);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sv-detail-svg {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.sv-detail-title {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.sv-detail-desc {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 18px;
+}
+
+.sv-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sv-detail-tag {
+  font-family: "Barlow", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(255, 166, 107, 0.06);
+  border: 1px solid rgba(255, 166, 107, 0.12);
+  border-radius: 100px;
+  padding: 6px 14px;
+  letter-spacing: 0.3px;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.sv-card-wrap:hover .sv-detail-tag:hover {
+  background: rgba(255, 166, 107, 0.12);
+  border-color: rgba(255, 166, 107, 0.25);
+}
+
+/* Hide detail panels on tablet and below */
+@media (max-width: 1024px) {
+  .sv-detail-panel {
+    display: none;
+  }
+}
+
+/* ─── STATIC CARD (8th slot) ─── */
+.sv-card--static {
+  background: linear-gradient(145deg, rgba(255, 166, 107, 0.04) 0%, rgba(10, 10, 20, 0.6) 50%, rgba(91, 155, 213, 0.03) 100%);
+  border: 1px solid rgba(255, 166, 107, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: default;
+  pointer-events: none;
+  height: 100%;
+}
+
+.sv-card--static:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: rgba(255, 166, 107, 0.1);
+}
+
+.sv-static-inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sv-static-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.sv-static-content {
+  padding: 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sv-static-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  font-family: "Barlow", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--primary);
+  border: 1px solid rgba(255, 166, 107, 0.2);
+  border-radius: 100px;
+  padding: 6px 16px;
+  margin-bottom: 16px;
+  background: rgba(255, 166, 107, 0.04);
+}
+
+.sv-static-title {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  margin: 0 0 10px;
+  line-height: 1.25;
+}
+
+.sv-static-desc {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0 0 24px;
+}
+
+.sv-static-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: auto;
+}
+
+.sv-static-stat {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 16px 14px;
+  text-align: center;
+}
+
+.sv-static-stat-num {
+  display: block;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.sv-static-stat-label {
+  font-family: "Barlow", sans-serif;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sv-static-bg-num {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 166, 107, 0.06);
+  pointer-events: none;
+}
+
+/* ─── PROCESS MINI ─── */
+.sv-process {
+  position: relative;
+  padding: 100px 0;
+  background: #050510;
+  overflow: hidden;
+}
+
+.sv-process-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sv-process-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sv-process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+}
+
+/* Connecting line */
+.sv-process-steps::before {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 166, 107, 0.2),
+    rgba(255, 166, 107, 0.2),
+    transparent
+  );
+  z-index: 0;
+}
+
+.sv-step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sv-step-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 166, 107, 0.06);
+  border: 1.5px solid rgba(255, 166, 107, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--primary);
+  transition: all 0.4s ease;
+}
+
+.sv-step:hover .sv-step-circle {
+  background: rgba(255, 166, 107, 0.12);
+  border-color: rgba(255, 166, 107, 0.4);
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 166, 107, 0.15);
+}
+
+.sv-step-title {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.sv-step-desc {
+  font-family: "Barlow", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ─── MARQUEE ─── */
+.sv-marquee {
+  padding: 50px 0;
+  background: #050510;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.sv-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: svMarquee 30s linear infinite;
+}
+
+.sv-marquee-set {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.sv-mq-item {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(28px, 4vw, 52px);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+  padding: 0 20px;
+  white-space: nowrap;
+  transition: all 0.4s ease;
+}
+
+.sv-mq-item:hover {
+  -webkit-text-stroke-color: rgba(255, 166, 107, 0.3);
+  color: rgba(255, 166, 107, 0.05);
+}
+
+.sv-mq-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 166, 107, 0.3);
+  flex-shrink: 0;
+}
+
+/* ─── SCROLL REVEAL ─── */
+.sv-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sv-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sv-reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+.sv-reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+.sv-reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+.sv-reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+.sv-reveal-delay-5 {
+  transition-delay: 0.5s;
+}
+.sv-reveal-delay-6 {
+  transition-delay: 0.6s;
+}
+.sv-reveal-delay-7 {
+  transition-delay: 0.7s;
+}
+
+/* ─── KEYFRAMES ─── */
+@keyframes svFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes svPulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes svFloat1 {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-14px) translateX(6px);
+  }
+}
+
+@keyframes svFloat2 {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(10px) translateX(-8px);
+  }
+}
+
+@keyframes svFloat3 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+@keyframes svMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes svHexPulse {
+  0%,
+  100% {
+    opacity: 0.05;
+  }
+  50% {
+    opacity: 0.12;
+  }
+}
+
+@keyframes svOrbDrift1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(40px, -30px);
+  }
+  66% {
+    transform: translate(-20px, 20px);
+  }
+}
+
+@keyframes svOrbDrift2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-50px, 25px);
+  }
+  66% {
+    transform: translate(30px, -35px);
+  }
+}
+
+@keyframes svNodeGlow {
+  0%,
+  100% {
+    r: 3;
+    opacity: 0.3;
+  }
+  50% {
+    r: 5;
+    opacity: 0.7;
+  }
+}
+
+@keyframes svDash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+  .sv-hero-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .sv-hero-desc {
+    margin: 0 auto 36px;
+  }
+
+  .sv-hero-cta {
+    justify-content: center;
+  }
+
+  .sv-hero-visual {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .sv-hero-vertical {
+    display: none;
+  }
+
+  .sv-vertical-title {
+    font-size: 56px;
+    left: 10px;
+    -webkit-text-stroke: 1.2px rgba(255, 255, 255, 0.06);
+  }
+
+  .sv-float-badge--1 {
+    right: 0;
+  }
+  .sv-float-badge--3 {
+    right: -5%;
+  }
+  .sv-float-badge--2 {
+    left: 0;
+  }
+
+  .sv-process-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 24px;
+  }
+
+  .sv-process-steps::before {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .sv-hero {
+    padding: 140px 0 80px;
+  }
+
+  .sv-vertical-title {
+    display: none;
+  }
+
+  .sv-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sv-process-steps {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .sv-float-badge {
+    display: none;
+  }
+}
