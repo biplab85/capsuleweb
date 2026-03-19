@@ -27,7 +27,7 @@ html {
   --radius--border-lg: 20px;
   --radius--border-xl: 1000px;
   --fonts--paragraph: 'Titillium Web', sans-serif;
-  --fonts--heading: 'League Spartan', sans-serif;
+  --fonts--heading: 'Barlow', sans-serif;
 }
 
 body.main-body {
@@ -1124,7 +1124,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   right: -5%;
   transform: translate(-50%, -50%);
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 520px;
   line-height: 1;
   color: transparent;
@@ -2844,7 +2844,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 30px;
   line-height: 1.3em;
 }
@@ -3158,7 +3158,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 10px;
   right: 16px;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 56px;
   line-height: 1;
   color: transparent;
@@ -3216,7 +3216,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Card title */
 .wcu-card__title {
   position: relative;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: rgba(255,255,255,0.92);
@@ -3476,7 +3476,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 12px;
   right: 18px;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 64px;
   line-height: 1;
   color: transparent;
@@ -3554,7 +3554,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Step title */
 .hiw-step__title {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 21px;
   font-weight: 700;
   color: rgba(255,255,255,0.92);
@@ -3879,7 +3879,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Heading */
 .cta-banner__heading {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 44px;
   line-height: 1.2;
   color: #fff;

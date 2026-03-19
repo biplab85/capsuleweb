@@ -96,7 +96,7 @@
 }
 
 .pj-hero-headline {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: clamp(42px, 6vw, 82px);
   line-height: 1.05;
   color: #fff;
@@ -136,7 +136,7 @@
 }
 
 .pj-hero-stat-num {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 800;
   font-size: 36px;
   color: var(--primary);
@@ -270,7 +270,7 @@
 }
 
 .pj-section-heading {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: clamp(30px, 4vw, 48px);
   line-height: 1.15;
   color: #fff;
@@ -400,7 +400,7 @@
 }
 
 .pj-card-title {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-size: 22px;
   color: #fff;
@@ -627,7 +627,7 @@
   position: absolute;
   top: 16px;
   left: 20px;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 900;
   font-size: 64px;
   line-height: 1;
@@ -652,7 +652,7 @@
 }
 
 .pj-feat-title {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 800;
   font-size: clamp(28px, 3.5vw, 42px);
   color: #fff;
@@ -710,7 +710,7 @@
 }
 
 .pj-mq-item {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: clamp(28px, 4vw, 52px);
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
