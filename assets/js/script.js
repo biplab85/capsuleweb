@@ -935,4 +935,30 @@ document.addEventListener('DOMContentLoaded', function () {
     setActive('hero');
   })();
 
+  // ========== PAGE-BASED NAV ACTIVE (sub-pages) ==========
+  (function () {
+    var path = window.location.pathname;
+    var page = path.substring(path.lastIndexOf('/') + 1).toLowerCase() || 'index.html';
+
+    var pageMap = {
+      'index.html': 'Home',
+      'aboutus.html': 'About',
+      'services.html': 'Services',
+      'how-it-works.html': 'How It Works',
+      'projects.html': 'Projects',
+      'contact.html': 'Contact'
+    };
+
+    var activeName = pageMap[page];
+    if (!activeName) return;
+
+    var navLinks = document.querySelectorAll('.nav-menu > .nav-link-wrapper');
+    navLinks.forEach(function (link) {
+      var text = link.querySelector('.nav-link .default-text');
+      if (text && text.textContent.trim() === activeName) {
+        link.classList.add('nav-active');
+      }
+    });
+  })();
+
 });

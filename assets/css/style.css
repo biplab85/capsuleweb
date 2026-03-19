@@ -632,11 +632,13 @@ h1, h2, h3, h4, h5, h6 {
    Hero Logo Draw Animation
    ============================================ */
 
-#hero-logo-anim {
+#hero-logo-anim,
+.hero-top-content .inner-logo {
   margin-bottom: 16px;
 }
 
-#hero-logo-anim svg {
+#hero-logo-anim svg,
+.hero-top-content .inner-logo svg {
   width: 300px;
   height: auto;
   display: block;
@@ -722,13 +724,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 767px) {
-  #hero-logo-anim {
+  #hero-logo-anim,
+  .hero-top-content .inner-logo {
     display: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #hero-logo-anim svg * {
+  #hero-logo-anim svg *,
+  .inner-logo svg * {
     animation: none !important;
   }
   .hl-capsule { stroke-dashoffset: 0; }
