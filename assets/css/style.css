@@ -4168,3 +4168,226 @@ h1, h2, h3, h4, h5, h6 {
     animation: none !important;
   }
 }
+
+/* ============================================================
+   FOOTER — Grid override for 4-block layout
+   ============================================================ */
+.footer-wrapper {
+  grid-template-columns: 1.2fr 0.5fr 0.5fr 0.75fr 1.1fr;
+}
+
+/* ============================================================
+   FOOTER NEWSLETTER CARD
+   ============================================================ */
+.footer-block--newsletter {
+  grid-column: span 1;
+}
+
+.footer-newsletter-card {
+  position: relative;
+  background: linear-gradient(145deg, #0d0f1a, #141627);
+  border-radius: 16px;
+  padding: 28px 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 166, 107, 0.12);
+}
+
+.footer-newsletter-glow {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(255, 166, 107, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.footer-newsletter-content {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-newsletter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: rgba(255, 166, 107, 0.08);
+  border: 1px solid rgba(255, 166, 107, 0.15);
+  border-radius: 30px;
+  padding: 5px 14px;
+  margin-bottom: 16px;
+}
+
+.footer-newsletter-title {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.footer-newsletter-desc {
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0 0 20px;
+}
+
+.footer-newsletter-form {
+  margin: 0;
+}
+
+.footer-newsletter-input-wrap {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-newsletter-input-wrap:focus-within {
+  border-color: rgba(255, 166, 107, 0.35);
+  box-shadow: 0 0 20px rgba(255, 166, 107, 0.06);
+}
+
+.footer-newsletter-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 10px 14px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-newsletter-btn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffa66b, #ff7a30);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(.25,.46,.45,.94), box-shadow 0.3s ease;
+}
+
+.footer-newsletter-btn:hover {
+  transform: translateX(3px);
+  box-shadow: 0 4px 18px rgba(255, 122, 48, 0.3);
+}
+
+.footer-newsletter-privacy {
+  font-family: 'Barlow', sans-serif;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.25);
+  margin: 12px 0 0;
+  letter-spacing: 0.3px;
+}
+
+/* --- Footer newsletter responsive --- */
+@media screen and (max-width: 991px) {
+  .footer-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-block--links-merged {
+    grid-column: span 1;
+  }
+  .footer-block--newsletter {
+    grid-column: span 2;
+  }
+  .footer-newsletter-card {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer-block--links-merged,
+  .footer-block--newsletter {
+    grid-column: span 1;
+  }
+}
+
+/* Hide "Why Us" and "FAQ" nav links from all pages */
+.nav-menu .nav-link-wrapper[href="/#why-choose-us"],
+.nav-menu .nav-link-wrapper[href="/#faq"],
+.nav-menu .nav-link-wrapper[href="index.html#why-choose-us"],
+.nav-menu .nav-link-wrapper[href="index.html#faq"] {
+  display: none !important;
+}
+
+/* Footer merged links — span 2 grid columns so Contact Us stays right */
+.footer-block--links-merged {
+  grid-column: span 2;
+}
+
+/* 2-column link list with gap between columns */
+.link-list--2col {
+  display: flex;
+  flex-flow: row;
+  gap: 50px;
+}
+
+/* Each column of links */
+.link-list__col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 120px;
+}
+
+.link-list__col .footer-link-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.link-list__col .footer-link {
+  align-items: flex-start;
+}
+
+/* Arrow before footer link text */
+.link-list__col .footer-link .text::before {
+  content: '→';
+  margin-right: 8px;
+  display: inline-block;
+  transition: color 0.3s ease;
+  color: var(--heading-2);
+}
+
+.link-list__col .footer-link-wrapper:hover .footer-link .text::before {
+  color: var(--primary);
+}
+
+.link-list__col .footer-link-wrapper .mask .nav-border {
+  visibility: hidden;
+}
+
+/* Hide "Why Us" and "FAQ" footer links from all pages */
+.footer-link-wrapper[href="/#why-choose-us"],
+.footer-link-wrapper[href="/#faq"],
+.footer-link-wrapper[href="index.html#why-choose-us"],
+.footer-link-wrapper[href="index.html#faq"] {
+  display: none !important;
+}
