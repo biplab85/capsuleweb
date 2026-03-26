@@ -33,6 +33,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+
+  // ========== FOOTER ACTIVE LINK ==========
+  (function () {
+    var page = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.footer-link-wrapper').forEach(function (link) {
+      var href = link.getAttribute('href');
+      if (href === page || (page === 'index.html' && href === '/')) {
+        link.classList.add('footer-active');
+        var texts = link.querySelectorAll('.footer-link .text');
+        for (var i = 0; i < texts.length; i++) {
+          texts[i].style.color = 'var(--primary)';
+        }
+      }
+    });
+  })();
+
   // ========== HERO FADE IN ==========
   var heroContainer = document.querySelector('.container.hero');
   if (heroContainer) {
@@ -362,8 +378,108 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // ========== FANCYBOX ==========
+  // ========== FANCYBOX PORTFOLIO POPUP ==========
+  // Custom HTML-based lightbox — bypasses Fancybox image/Panzoom entirely
   if (typeof Fancybox !== 'undefined') {
+    var PJ_FRAME_W = Math.min(window.innerWidth * 0.8, 900);
+    var PJ_FRAME_H = Math.min(window.innerHeight * 0.72, 580);
+
+    // Prevent Fancybox auto-bind on portfolio links
+    Fancybox.unbind('[data-fancybox="portfolio"]');
+
+    // Build HTML slide for each portfolio item
+    function pjBuildSlide(src, caption) {
+      return '<div class="pj-popup-frame" style="width:' + PJ_FRAME_W + 'px;height:' + PJ_FRAME_H + 'px;">' +
+        '<img src="' + src + '" alt="' + caption + '" draggable="false" />' +
+        '</div>' +
+        '<p class="pj-popup-caption">' + caption + '</p>';
+    }
+
+    // Attach hover scroll to a frame element
+    function pjAttachHover(frame) {
+      if (!frame || frame.dataset.pjHover) return;
+      frame.dataset.pjHover = '1';
+      var img = frame.querySelector('img');
+      if (!img) return;
+
+      var activate = function () {
+        var imgH = img.offsetHeight;
+        var frameH = frame.offsetHeight;
+        var scrollDist = imgH - frameH;
+        if (scrollDist <= 0) return;
+
+        var duration = Math.max(4, Math.min(10, scrollDist / 120));
+        img.style.transition = 'transform ' + duration + 's cubic-bezier(0.25,0.1,0.25,1)';
+
+        frame.addEventListener('mouseenter', function () {
+          var dist = img.offsetHeight - frame.offsetHeight;
+          if (dist > 0) img.style.transform = 'translateY(-' + dist + 'px)';
+        });
+        frame.addEventListener('mouseleave', function () {
+          var dur = parseFloat(img.style.transitionDuration) || 5;
+          img.style.transition = 'transform ' + (dur * 0.5) + 's cubic-bezier(0.25,0.1,0.25,1)';
+          img.style.transform = 'translateY(0)';
+          setTimeout(function () {
+            img.style.transition = 'transform ' + dur + 's cubic-bezier(0.25,0.1,0.25,1)';
+          }, dur * 500);
+        });
+      };
+
+      if (img.complete && img.naturalHeight) {
+        activate();
+      } else {
+        img.addEventListener('load', activate);
+      }
+    }
+
+    // Handle portfolio clicks
+    document.addEventListener('click', function (e) {
+      var trigger = e.target.closest('[data-fancybox="portfolio"]');
+      if (!trigger) return;
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Gather all portfolio items
+      var allLinks = Array.from(document.querySelectorAll('[data-fancybox="portfolio"]'));
+      var startIndex = allLinks.indexOf(trigger);
+      if (startIndex < 0) startIndex = 0;
+
+      var slides = allLinks.map(function (link) {
+        return {
+          src: pjBuildSlide(link.getAttribute('href'), link.getAttribute('data-caption') || ''),
+          type: 'html'
+        };
+      });
+
+      Fancybox.show(slides, {
+        startIndex: startIndex,
+        animated: true,
+        showClass: 'f-fadeSlowIn',
+        hideClass: 'f-fadeSlowOut',
+        Image: { zoom: false },
+        Toolbar: {
+          display: { left: [], middle: [], right: ['close'] }
+        },
+        on: {
+          'Carousel.ready': function (fancybox) {
+            // Attach hover to initial slide
+            var frame = fancybox.container.querySelector('.fancybox__slide.is-selected .pj-popup-frame');
+            pjAttachHover(frame);
+          },
+          'Carousel.selectSlide': function (fancybox) {
+            // Reset & attach hover on slide change
+            setTimeout(function () {
+              var frames = fancybox.container.querySelectorAll('.pj-popup-frame');
+              frames.forEach(function (f) {
+                var img = f.querySelector('img');
+                if (img) img.style.transform = 'translateY(0)';
+                pjAttachHover(f);
+              });
+            }, 50);
+          }
+        }
+      });
+    }, true); // useCapture to intercept before Fancybox
   }
 
   // ========== HORIZONTAL SCROLL (Projects Section) ==========
